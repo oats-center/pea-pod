@@ -1,2 +1,2 @@
-# pea-pod
-A version of the Purdue OATS DataStation based around a Raspberry-Pi
+# Introduction
+This repository is intended to serve as a build guide for the pea-POD, a small Raspberry-Pi based server and LoRaWAN gateway that has been configured to help individuals establish their own IoT (Internet of Things) systems for agricultural applicaitons. This work has been done by members of the OATS (Open Ag Tech and Systems) research group at Purdue University, and is a part of the larger POD (Purdue OATS DataStation) iniative to share the benefits of LoRaWAN with farmeers and others with an interest in data collection and IoT. Regardless of experience level or technical background, by following this guide step-by-step readers should be able to establish their own LoRaWAN network and begin collecting data that can translate to improved insights.
