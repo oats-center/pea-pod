@@ -1,5 +1,5 @@
 # **Overview**
-This section will detail what is needed to setup, power on, connect to, and configure the RAK Wireless Developer gateway and its Raspberry-Pi. This is the basis of the entire pea-POD project and proper setup will necessary as it is the basis for every other step. The following instructions are copied from the [RAK Quickstart Guide](https://github.com/adamschreck/pea-pod/files/10867195/RAK.Quickstart.Guide.pdf), but has been adapted to further clarify steps.
+This section will detail what is needed to setup, power on, connect to, and configure the RAK Wireless Developer gateway and its Raspberry-Pi. This is the basis of the entire pea-POD project and proper setup will necessary as it is the basis for every other step. The following instructions include content copied from the [RAK Quickstart Guide](https://github.com/adamschreck/pea-pod/files/10867195/RAK.Quickstart.Guide.pdf), but has been adapted to further clarify steps.
 
 # **Steps**
 
@@ -59,9 +59,9 @@ The steps below will show the Wi-Fi AP mode, but in depth details of connecting 
 
 ![9 Medium](https://user-images.githubusercontent.com/126691160/222528230-f432d86c-2c19-485e-830a-ee336a40c086.jpeg)
 
-    Once Terminal has lauched for Mac OS, enter root mode (allows you to take on the role of an administrator on your Mac) type `sudo -i` in the window then click `enter`
+Once Terminal has lauched for Mac OS, enter root mode (allows you to take on the role of an administrator on your Mac) type `sudo -i` in the window then click `enter`
 
-    This should prompt you to have to input your computer's password and click `enter`. Below is an image depicting how your terminal should appear.
+This should prompt you to have to input your computer's password and click `enter`. Below is an image depicting how your terminal should appear.
 
 ![sudo-mac](https://user-images.githubusercontent.com/126691160/222524088-6bd4fbb8-5153-49df-b127-66dcebe35fab.jpeg)
 
@@ -90,8 +90,27 @@ The sections coordinate to these actions:
 
 ### Set Pi Password
 
-2. Follow the on screen prompt shown below to set a new pass for logging onto your Pi. This will replace the default password ***raspberry***. BE SURE TO TAKE NOTE OF THE PASSWORD YOU CREATE, IT IS NECESSARY TO LOGIN TO YOUR Pi AND CANNOT BE RETRIEVED OR RESET LATER
+2. Select and enter the `1 Set pi password` option. Follow the on screen prompt shown below to set a new password for logging onto your Pi. This will replace the default password ***raspberry***. BE SURE TO TAKE NOTE OF THE PASSWORD YOU CREATE, IT IS NECESSARY TO LOGIN TO YOUR Pi AND CANNOT BE RETRIEVED OR RESET LATER
 
 ![Screen Shot 2023-03-02 at 2 36 36 PM](https://user-images.githubusercontent.com/126691160/222538504-a0f50d5a-d1e4-4445-bdd9-e9901233e0c7.png)
+
+### Setup RAK Gateway Channel Plan 
+
+3. From the main menu, select and enter the `2 Setup RAK Gateway Channel Plan` option. Then select the `2 Server is ChirpStack` option shown below.
+
+![chirpstack](https://user-images.githubusercontent.com/126691160/222550248-ffed52e2-1a9a-4025-8bc1-2d1fa0da428d.png)
+
+You will then be prompted with two options `1 ChirpStack Channel-plan configuration` and `2 ChirpStack ADR configure`. For now select `1 ChirpStack Channel-plan configuration`. The screen below will be prompted.
+
+![chirpstack_channel](https://user-images.githubusercontent.com/126691160/222551572-20419394-0c6c-4678-a5f7-8485f80f87ae.png)
+
+This will allow you to select your regional frequency band, here in the US LoRa uses 915 MhZ, so if you are in the US select option `10 US_902_928`. The screen below will be prompted and ask for you to assign the IP address for Chirpstack. The default IP that you should enter is `127.0.0.1` then select `OK` to return to the ***ChirpStack Channel-plan configuration**
+
+![loraserver_ip](https://user-images.githubusercontent.com/126691160/222552326-b1439149-6579-4f66-b3e0-b85d55bb5c4a.png)
+
+Now select `2 ChirpStack ADR configure`. This option allows you to choose whether or not you want your network server, responsible for managing your network, to use an Adaptive Data Rate (ADR). An ADR is beneficial in many cases because it allows your network to change the data rate at which packets are sent. Meaning, it can adjust to be a higher or lower data rate depending on adverse conditions like a large distance between your sensor and gateway causing low packet acceptance. Within this screen select `1 Enable ADR` then select `OK` 
+
+![adr_settings](https://user-images.githubusercontent.com/126691160/222553729-8bb7683f-47df-4a7f-8b19-865c88b0cd14.png)
+
 
 ### Setup Home Internet
