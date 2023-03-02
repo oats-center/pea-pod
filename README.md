@@ -36,6 +36,6 @@ Below is a diagram describing how the pea-POD architecture operates:
 
 - [Weatherproof Case for Gateway](https://store.rakwireless.com/products/outdoor-enclosure-kit-h?variant=37912840863942)
 
-- [Recommended Antenna](https://store.rakwireless.com/products/5-8dbi-fiber-glass-antenna?variant=39942855033030)
+- [Recommended Antenna if in Weatherproof Case](https://store.rakwireless.com/products/5-8dbi-fiber-glass-antenna?variant=39942855033030)
 
-- [Enclosure Bracket](https://store.rakwireless.com/products/pilot-gateway-pro-enclosure-holders)
+- [Gateway Enclosure Bracket](https://store.rakwireless.com/products/pilot-gateway-pro-enclosure-holders)
