@@ -43,8 +43,30 @@ Today not all laptops have ethernet ports, and thus not every user will have the
 
 The steps below will show the Wi-Fi AP mode, but in depth details of connecting over ethernet are available [here](https://github.com/adamschreck/pea-pod/files/10867195/RAK.Quickstart.Guide.pdf)
 
-###Locate and connect to network
+### Locate and connect to network
 
 1. Similar to how one may go about setting up a printer at home, the first step is to locate and connect to the local network of the device. To do this open your personal computer's network settings, which is wherever you would go to connect to a new Wi-Fi. In the case of a printer the network may be called something like "HP-ENVY5000", but in this case the default network name will appear in your Wi-Fi network list as "Rakwireless_XXXX" with the last 4 XXXX digits representing the MAC address (an identifier) of your gateway/Pi. After locating and selecting the network, you will be prompted to input the password. The default password for the local network is ***rakwireless***. An example can be seen in the image below.
 
 ![Screen Shot 2023-03-01 at 9 56 29 PM](https://user-images.githubusercontent.com/126691160/222512913-850ad311-5929-466b-bcb9-e09d09c00f9f.png)
+
+### Open Terminal
+
+2. Terminal is essentially a way to interface with the backend of your computer. For windows users access Terminal information from [Microsoft](https://learn.microsoft.com/en-us/windows/terminal/) or look to RAK's explanation in the [Quickstart Guide](https://github.com/adamschreck/pea-pod/files/10867195/RAK.Quickstart.Guide.pdf). 
+
+For Linux: Follow the Mac process with the exception of the Terminal command of `sudo -i`
+
+For Mac OS: launch the Terminal application from Spotlight by hitting Command + Spacebar and typing Terminal, and then return. 
+
+![9 terminal](https://user-images.githubusercontent.com/126691160/222517583-d18fbdde-948d-4415-8ce2-e5a16ba25976.png)
+
+Once Terminal has lauched for Mac OS, enter root mode (allows you to take on the role of an administrator on your Mac) `sudo -i` then `enter`
+
+This should prompt you to have to input your computer's password. Below is an image depicting how your terminal should appear.
+
+![sudo-mac](https://user-images.githubusercontent.com/126691160/222524088-6bd4fbb8-5153-49df-b127-66dcebe35fab.jpeg)
+
+### SSH in to Pi
+
+3.
+
+![login-success](https://user-images.githubusercontent.com/126691160/222524985-4bf51ed9-c55e-4a61-89ff-7f9caa8f3bf3.jpeg)

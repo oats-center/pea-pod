@@ -24,7 +24,7 @@ Prerequisites for completing this project:
 
 4. A mechanism to plug a micro SD card into your computer (likely through some sort of dongle or micro SD to SD card adapter)
 
-4. Awareness what LoRaWAN is (see [What is LoRaWAN?.pdf](https://github.com/adamschreck/pea-pod/files/10872800/What.is.LoRaWAN.pdf) or [Explanation of LoRaWAN from The Things Network](https://www.thethingsnetwork.org/docs/lorawan/) for a rudimentary explanation)
+4. Awareness of what LoRaWAN is (see [What is LoRaWAN?.pdf](https://github.com/adamschreck/pea-pod/files/10872800/What.is.LoRaWAN.pdf) or [Explanation of LoRaWAN from The Things Network](https://www.thethingsnetwork.org/docs/lorawan/) for a rudimentary explanation)
 
 5. A general idea of what terminal and terminal commands are (very little to no coding experience will be required and all necessary terminal commands will be included in the instructions)
 
