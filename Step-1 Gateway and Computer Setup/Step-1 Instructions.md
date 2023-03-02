@@ -55,18 +55,20 @@ The steps below will show the Wi-Fi AP mode, but in depth details of connecting 
 
 For Linux: Follow the Mac process with the exception of the Terminal command of `sudo -i`
 
-For Mac OS: launch the Terminal application from Spotlight by hitting Command + Spacebar and typing Terminal, and then return. 
+For Mac OS: launch the Terminal application from Spotlight by hitting `Command` + `Spacebar` and typing Terminal, and then return. 
 
-![9 terminal](https://user-images.githubusercontent.com/126691160/222517583-d18fbdde-948d-4415-8ce2-e5a16ba25976.png)
+![9 Medium](https://user-images.githubusercontent.com/126691160/222528230-f432d86c-2c19-485e-830a-ee336a40c086.jpeg)
 
-Once Terminal has lauched for Mac OS, enter root mode (allows you to take on the role of an administrator on your Mac) `sudo -i` then `enter`
+Once Terminal has lauched for Mac OS, enter root mode (allows you to take on the role of an administrator on your Mac) type `sudo -i` in the window then click `enter`
 
-This should prompt you to have to input your computer's password. Below is an image depicting how your terminal should appear.
+This should prompt you to have to input your computer's password and click `enter`. Below is an image depicting how your terminal should appear.
 
 ![sudo-mac](https://user-images.githubusercontent.com/126691160/222524088-6bd4fbb8-5153-49df-b127-66dcebe35fab.jpeg)
 
-### SSH in to Pi
+### SSH into Pi
 
-3.
+3. Enter `ssh pi@192.168.230.1` in the terminal window then click `enter`. This should prompt you to have to input your Pi's password, the default password is ***raspberry***. Type `raspberry` in the window then click `enter`. After this you will be logged into your Pi for the first time, CONGRATS! The image below depicts how your terminal window should appear after this step.
 
-![login-success](https://user-images.githubusercontent.com/126691160/222524985-4bf51ed9-c55e-4a61-89ff-7f9caa8f3bf3.jpeg)
+![Screen Shot 2023-03-02 at 2 05 21 PM](https://user-images.githubusercontent.com/126691160/222528120-b7df3366-1502-491c-9ca2-47ce95905113.png)
+
+### Configuring Gateway Settings
