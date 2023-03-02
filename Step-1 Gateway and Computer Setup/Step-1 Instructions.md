@@ -53,22 +53,32 @@ The steps below will show the Wi-Fi AP mode, but in depth details of connecting 
 
 2. Terminal is essentially a way to interface with the backend of your computer. For windows users access Terminal information from [Microsoft](https://learn.microsoft.com/en-us/windows/terminal/) or look to RAK's explanation in the [Quickstart Guide](https://github.com/adamschreck/pea-pod/files/10867195/RAK.Quickstart.Guide.pdf). 
 
-For Linux: Follow the Mac process with the exception of the Terminal command of `sudo -i`
+    For Linux: Follow the Mac process with the exception of the Terminal command of `sudo -i`
 
-For Mac OS: launch the Terminal application from Spotlight by hitting `Command` + `Spacebar` and typing Terminal, and then return. 
+    For Mac OS: launch the Terminal application from Spotlight by hitting `Command` + `Spacebar` and typing Terminal, and then return. 
 
 ![9 Medium](https://user-images.githubusercontent.com/126691160/222528230-f432d86c-2c19-485e-830a-ee336a40c086.jpeg)
 
-Once Terminal has lauched for Mac OS, enter root mode (allows you to take on the role of an administrator on your Mac) type `sudo -i` in the window then click `enter`
+    Once Terminal has lauched for Mac OS, enter root mode (allows you to take on the role of an administrator on your Mac) type `sudo -i` in the window then click `enter`
 
-This should prompt you to have to input your computer's password and click `enter`. Below is an image depicting how your terminal should appear.
+    This should prompt you to have to input your computer's password and click `enter`. Below is an image depicting how your terminal should appear.
 
 ![sudo-mac](https://user-images.githubusercontent.com/126691160/222524088-6bd4fbb8-5153-49df-b127-66dcebe35fab.jpeg)
 
 ### SSH into Pi
 
-3. Enter `ssh pi@192.168.230.1` in the terminal window then click `enter`. This should prompt you to have to input your Pi's password, the default password is ***raspberry***. Type `raspberry` in the window then click `enter`. After this you will be logged into your Pi for the first time, CONGRATS! The image below depicts how your terminal window should appear after this step.
+3. Type `ssh pi@192.168.230.1` (the default IP address of the Pi) in the terminal window then click `enter`. This should prompt you to have to input your Pi's password, the default password is ***raspberry***. Type `raspberry` in the window then click `enter`. After this you will be logged into your Pi for the first time, CONGRATS! The image below depicts how your terminal window should appear after this step.
 
 ![Screen Shot 2023-03-02 at 2 05 21 PM](https://user-images.githubusercontent.com/126691160/222528120-b7df3366-1502-491c-9ca2-47ce95905113.png)
 
-### Configuring Gateway Settings
+## Configuring Gateway Settings
+
+### Login to Pi's User Interface
+
+1. In your Terminal window type `sudo gateway-config` then click `enter`. This will lauch the Pi's User Interface shown below. You can navigate through the different sections using your keyboard's arrow keys and by clicking `enter`.
+
+![config-options](https://user-images.githubusercontent.com/126691160/222538235-df61a6e5-3b84-4563-8105-c09ecbecda86.png)
+
+### Set Pi Password
+
+2. ![Screen Shot 2023-03-02 at 2 36 36 PM](https://user-images.githubusercontent.com/126691160/222538504-a0f50d5a-d1e4-4445-bdd9-e9901233e0c7.png)
