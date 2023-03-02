@@ -5,7 +5,7 @@ This section will detail what is needed to setup, power on, connect to, and conf
 
 ## General
 
-Ensure that you have completed these steps before powering on the gateway or else damage may occur to its internal hardware.
+ENSURE THAT YOU HAVE COMPLETED THESE STEPS BEFORE POWERING ON THE GATEWAY OR ELSE DAMAGE MAY OCCUR TO ITS INTERNAL HARDWARE.
 
 ### Survey Package Contents
 
@@ -29,6 +29,6 @@ Ensure that you have completed these steps before powering on the gateway or els
 
 ### Power On
 
-5. With steps 1-4 completed the power cord can be inserted into its place, if using the provided supply then it will be the usb-c slot on the side of the case. After connecting to power two small LED lights should illuminate.
+5. With steps 1-4 completed the power cord can be inserted into its place, if using the provided supply then it will be the usb-c slot on the side of the case. After plugging in or connecting to power two small LED lights should illuminate.
 
 ## Connecting to Computer

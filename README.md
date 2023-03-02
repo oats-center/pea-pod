@@ -14,6 +14,20 @@ Benefits of the pea-POD, over other weather stations or similar systems, that wi
 
 All of the work has been done by members of the OATS (Open Ag Tech and Systems) research group at Purdue University, and is a part of the larger POD (Purdue OATS DataStation) iniative to share the benefits of LoRaWAN with farmers and others with an interest in data collection and IoT. Each element within this design leverages either off the shelf hardware or open source software. This was intentional, as it helps the pea-POD retain a low cost and approachability. Regardless of experience level or technical background, by following this guide step-by-step readers should be able to establish their own LoRaWAN network and begin collecting data that can translate into improved insights.
 
+Prerequisites for completing this project:
+
+1. A Windows/Mac OS/Linux personal computer 
+
+2. Internet access at the time of configuration
+
+3. The necessary hardware, this guide will detail the RAK7244 Wisgate Developer Gateway
+
+4. Awareness what LoRaWAN is (see [What is LoRaWAN?.pdf](https://github.com/adamschreck/pea-pod/files/10872800/What.is.LoRaWAN.pdf) or [Explanation of LoRaWAN from The Things Network](https://www.thethingsnetwork.org/docs/lorawan/) for a rudimentary explanation)
+
+5. A general idea of what terminal and terminal commands are, very little to no coding will be required and all necessary terminal commands will be included in the instructions
+
+6. Surface level understanding of IP addresses (see [this link](https://www.wpbeginner.com/glossary/ip-address/) for more information)
+
 For those who have no coding or computer science background this project may seem intimidating, and issues may occur along the way for which this manual does not include a solution. Each component of this system has been chosen for the existing documentation provided by the manufacturers and the amount of community support. This means that with persistence and a problem-solving mindset nearly anything can be solved with online searching. For those with domain expertise, this system can be a jumping off point. If there is a sensor that you want to add, other data that you want to pull in, or an all togehter different approach that you would like to take then this can be a strong base to build from. Ultimately this is a flexible and use case dependent system where several options will be presented, so choose what's best for you! For example: if you have internet access at the site of deployment and want real time data, then implement the Step-5 Cloudflare Tunnel option. 
 
 Below is a diagram describing how the pea-POD architecture operates:
