@@ -53,9 +53,7 @@ The steps below will show the Wi-Fi AP mode, but in depth details of connecting 
 
 2. Terminal is essentially a way to interface with the backend of your computer. For windows users access Terminal information from [Microsoft](https://learn.microsoft.com/en-us/windows/terminal/) or look to RAK's explanation in the [Quickstart Guide](https://github.com/adamschreck/pea-pod/files/10867195/RAK.Quickstart.Guide.pdf). 
 
-    For Linux: Follow the Mac process with the exception of the Terminal command of 
-    
-        sudo -i
+    For Linux: Follow the Mac process with the exception of the Terminal command of `sudo -i`
 
     For Mac OS: launch the Terminal application from Spotlight by hitting `Command` + `Spacebar` and typing Terminal, and then return. 
 
@@ -75,14 +73,25 @@ The steps below will show the Wi-Fi AP mode, but in depth details of connecting 
 
 ## Configuring Gateway Settings
 
-### Login to Pi's User Interface
+### Login to the Pi's User Interface
 
 1. In your Terminal window type `sudo gateway-config` then click `enter`. This will lauch the Pi's User Interface shown below. You can navigate through the different sections using your keyboard's arrow keys and by clicking `enter`.
 
 ![config-options](https://user-images.githubusercontent.com/126691160/222538235-df61a6e5-3b84-4563-8105-c09ecbecda86.png)
 
+The sections coordinate to these actions:
+
+- Set pi password - used to set/change the password of the gateway.
+- Setup RAK Gateway Channel Plan - used to configure the frequency, on which the gateway will operate, and the LoRaWAN Server which the gateway will work with.
+- Restart packet-forwarder - used to restart the LoRa packet forwarder.
+- Edit packet-forwarder config - used to open the global_conf.json file, to edit LoRaWAN parameters manually.
+- Configure WIFI - used to configure the Wi-Fi settings in order to connect to a network.
+- Configure LAN - used to configure the Ethernet adapter settings.
+
 ### Set Pi Password
 
-2. 
+2. Follow the on screen prompt shown below to set a new pass for logging onto your Pi. This will replace the default password ***raspberry***. BE SURE TO TAKE NOTE OF THE PASSWORD YOU CREATE, IT IS NECESSARY TO LOGIN TO YOUR Pi AND CANNOT BE RETRIEVED OR RESET LATER
 
 ![Screen Shot 2023-03-02 at 2 36 36 PM](https://user-images.githubusercontent.com/126691160/222538504-a0f50d5a-d1e4-4445-bdd9-e9901233e0c7.png)
+
+### Setup Home Internet
