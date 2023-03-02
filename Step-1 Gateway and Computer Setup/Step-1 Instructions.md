@@ -31,4 +31,20 @@ ENSURE THAT YOU HAVE COMPLETED THESE STEPS BEFORE POWERING ON THE GATEWAY OR ELS
 
 5. With steps 1-4 completed the power cord can be inserted into its place, if using the provided supply then it will be the usb-c slot on the side of the case. After plugging in or connecting to power two small LED lights should illuminate.
 
-## Connecting to Computer
+## Connecting to the Pi
+
+Before you can begin setting up your Pi and gateway you must establish a connection between your computer and the Pi. There are two options that you have to perform this, you can connect wirelessly via the default local network of the Pi (also called Wi-Fi AP Mode) or through a wired ethernet connectiion between your computer and the Pi. Both options have positives and negatives.
+
+In the next section, after Connecting to the Pi, the use of terminal and ssh (Secure Shell) will be discussed for you to essentially log into your Pi. In the following sets of instructions for Chirpstack, Grafana, and others your Pi will require a conncetion to the internet to be able to download the necessary software. Facilitating this internet connection begins here in this step with how you connect to the Pi, and it is important to understand the tradeoffs and make a decision on how you will establish your connection. 
+
+For the wireless or Wi-Fi AP mode, you will be connecting to the local network of Pi, but this means that your personal computer will no longer be connected to your home internet. In later steps you will have to connect the Pi to your home internet, which will disable the the Pi's ability to broadcast its  own local network. This will also change the Pi's IP address that you will need to ssh to or log in with. With access to your home internet's router you can overcome this issue. If you intend on using your gateway and Pi without internet long term, then it may be best to use the ethernet connection as it will not disable the local network mode. All of this can also be reversed if you decide to chnage plans, and how to do that will be shown below. 
+
+Today not all laptops have ethernet ports, and thus not every user will have the ability to connect in this way. But if you do, then your laptop can remain connected to your home internet and still be connected via wire to the Pi.
+
+The steps below will show the Wi-Fi AP mode, but in depth details of connecting over ethernet are available [here](https://github.com/adamschreck/pea-pod/files/10867195/RAK.Quickstart.Guide.pdf)
+
+###Locate and connect to network
+
+1. Similar to how one may go about setting up a printer at home, the first step is to locate and connect to the local network of the device. To do this open your personal computer's network settings, which is wherever you would go to connect to a new Wi-Fi. In the case of a printer the network may be called something like "HP-ENVY5000", but in this case the default network name will appear in your Wi-Fi network list as "Rakwireless_XXXX" with the last 4 XXXX digits representing the MAC address (an identifier) of your gateway/Pi. After locating and selecting the network, you will be prompted to input the password. The default password for the local network is ***rakwireless***. An example can be seen in the image below.
+
+![Screen Shot 2023-03-01 at 9 56 29 PM](https://user-images.githubusercontent.com/126691160/222512913-850ad311-5929-466b-bcb9-e09d09c00f9f.png)
