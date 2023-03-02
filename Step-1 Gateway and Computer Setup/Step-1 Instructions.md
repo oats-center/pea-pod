@@ -53,7 +53,9 @@ The steps below will show the Wi-Fi AP mode, but in depth details of connecting 
 
 2. Terminal is essentially a way to interface with the backend of your computer. For windows users access Terminal information from [Microsoft](https://learn.microsoft.com/en-us/windows/terminal/) or look to RAK's explanation in the [Quickstart Guide](https://github.com/adamschreck/pea-pod/files/10867195/RAK.Quickstart.Guide.pdf). 
 
-    For Linux: Follow the Mac process with the exception of the Terminal command of `sudo -i`
+    For Linux: Follow the Mac process with the exception of the Terminal command of 
+    
+        sudo -i
 
     For Mac OS: launch the Terminal application from Spotlight by hitting `Command` + `Spacebar` and typing Terminal, and then return. 
 
@@ -81,4 +83,6 @@ The steps below will show the Wi-Fi AP mode, but in depth details of connecting 
 
 ### Set Pi Password
 
-2. ![Screen Shot 2023-03-02 at 2 36 36 PM](https://user-images.githubusercontent.com/126691160/222538504-a0f50d5a-d1e4-4445-bdd9-e9901233e0c7.png)
+2. 
+
+![Screen Shot 2023-03-02 at 2 36 36 PM](https://user-images.githubusercontent.com/126691160/222538504-a0f50d5a-d1e4-4445-bdd9-e9901233e0c7.png)
