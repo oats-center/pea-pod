@@ -41,6 +41,8 @@ Below is a diagram describing how the pea-POD architecture operates:
 
 - [PODs Github Page](https://github.com/oats-center/pod)
 
+- [RAK Gateway Product Overiew, Quickstart Guide, and Data Sheet](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7244/Overview/)
+
 ### Hardware
 *THESE LINKS WERE ACTIVE AND AVAILABLE AT THE TIME OF PUBLISHING BUT MAY BE OUT OF STOCK AT THE TIME OF YOUR ACCESS.*
 
