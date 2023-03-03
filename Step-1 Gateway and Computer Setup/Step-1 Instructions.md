@@ -75,7 +75,7 @@ This should prompt you to have to input your computer's password and click `ente
 
 ### Login to the Pi's User Interface
 
-1. In your Terminal window type `sudo gateway-config` then click `enter`. This will lauch the Pi's User Interface shown below. You can navigate through the different sections using your keyboard's arrow keys and by clicking `enter`.
+1. In your Terminal window type `sudo gateway-config` then click `enter`. This will lauch the Pi's User Interface shown below. You can navigate through the different sections using your keyboard's arrow keys and by clicking `enter`. The image below will later be refered to as the main menu.
 
 ![config-options](https://user-images.githubusercontent.com/126691160/222538235-df61a6e5-3b84-4563-8105-c09ecbecda86.png)
 
@@ -100,17 +100,26 @@ The sections coordinate to these actions:
 
 ![chirpstack](https://user-images.githubusercontent.com/126691160/222550248-ffed52e2-1a9a-4025-8bc1-2d1fa0da428d.png)
 
-You will then be prompted with two options `1 ChirpStack Channel-plan configuration` and `2 ChirpStack ADR configure`. For now select `1 ChirpStack Channel-plan configuration`. The screen below will be prompted.
+You will then be prompted with two options `1 ChirpStack Channel-plan configuration` and `2 ChirpStack ADR configure`.
 
 ![chirpstack_channel](https://user-images.githubusercontent.com/126691160/222551572-20419394-0c6c-4678-a5f7-8485f80f87ae.png)
+
+For now select `1 ChirpStack Channel-plan configuration`. The screen below will be prompted.
+
+![chirpstack-channel-plan](https://user-images.githubusercontent.com/126691160/222556831-9fdc9d86-8cd9-4ce5-98f0-e0416dd86e8e.png)
 
 This will allow you to select your regional frequency band, here in the US LoRa uses 915 MhZ, so if you are in the US select option `10 US_902_928`. The screen below will be prompted and ask for you to assign the IP address for Chirpstack. The default IP that you should enter is `127.0.0.1` then select `OK` to return to the ***ChirpStack Channel-plan configuration**
 
 ![loraserver_ip](https://user-images.githubusercontent.com/126691160/222552326-b1439149-6579-4f66-b3e0-b85d55bb5c4a.png)
 
-Now select `2 ChirpStack ADR configure`. This option allows you to choose whether or not you want your network server, responsible for managing your network, to use an Adaptive Data Rate (ADR). An ADR is beneficial in many cases because it allows your network to change the data rate at which packets are sent. Meaning, it can adjust to be a higher or lower data rate depending on adverse conditions like a large distance between your sensor and gateway causing low packet acceptance. Within this screen select `1 Enable ADR` then select `OK` 
+Now select `2 ChirpStack ADR configure`. This option allows you to choose whether or not you want your network server, responsible for managing your network, to use an Adaptive Data Rate (ADR). An ADR is beneficial in many cases because it allows your network to change the data rate at which packets are sent. Meaning, it can adjust to be a higher or lower data rate depending on adverse conditions like a large distance between your sensor and gateway causing low packet acceptance. Within this screen select `1 Enable ADR` then select `OK` and navigate back to the main menu.
 
 ![adr_settings](https://user-images.githubusercontent.com/126691160/222553729-8bb7683f-47df-4a7f-8b19-865c88b0cd14.png)
 
-
 ### Setup Home Internet
+
+THIS STEP WILL RESULT IN CHANGING THE IP ADDRESS OF THE Pi AND HOW YOU LOGIN, IF YOU NEED TO RETURN TO THE ORIGINAL DESCRIPTION FOLLOW [THIS LINK](https://github.com/adamschreck/pea-pod/blob/main/Step-1%20Gateway%20and%20Computer%20Setup/Step-1%20Instructions.md#connecting-to-the-pi)
+
+1. Begin by navigating from main menu down to `4 Add New SSID for Client`
+
+![wifi-ssid](https://user-images.githubusercontent.com/126691160/222596823-6c189999-78a5-442c-a5e9-015b190e31a6.png)
