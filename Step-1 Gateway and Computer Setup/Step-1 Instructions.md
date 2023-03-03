@@ -152,7 +152,7 @@ Now type your home internet's password. If there is none then leave this field e
 
 2. Lastly, reboot the gateway by typing `sudo reboot` in the command line then `enter`. This is a necessary step in order to enact and save the changes that you have made. By rebooting you will also become logged out of your Pi, to restablish your connection you will need to follow the steps of the section below.
 
-## Logging Back in to Gateway
+## Logging Back into Gateway
 
 After completing all of the above steps your Pi will no longer broadcast its local network, orignially appearing as some variation of `Rakwireless_XXXX` in your network list, it will no longer be visable here. Instead, your Pi is now a client or resident living on your home internet's router. To be able to ssh or login to your Pi you will need to determine the address of where it is currently living, specifically what its new address is on your router. This address will change as you add and remove devices from your home internet, so you should re-visit these steps if in the future the IP address that you would login with no longer works. 
 
@@ -168,6 +168,8 @@ After completing all of the above steps your Pi will no longer broadcast its loc
 
 ![Screen Shot 2023-03-02 at 10 33 54 PM](https://user-images.githubusercontent.com/126691160/222747624-2dec4c9a-24a4-46c6-ba7e-b0460ff93cd9.png)
 
-4. From here you will need to locate what can be refered to as the DHCP Client Table. This table is list of all of the devices connected to your home internet and other important information. Each router is different, so take note of the brand of router that you have consider searching something similar to `How to find client table on linksys router` and look for articles similar to [this](https://www.linksys.com/gb/support-article/?articleNum=316202). You should be able to locate a table that appears like the one seen below. Here you can the device `rak-gateway` and its IP address on your network `10.0.0.145`.
+4. From here you will need to locate what can be refered to as the DHCP Client Table. This table is list of all of the devices connected to your home internet and other important information. Each router is different, so take note of the brand of router that you have consider searching something similar to `How to find client table on linksys router` and look for articles similar to [this](https://www.linksys.com/gb/support-article/?articleNum=316202). You should be able to locate a table that appears like the one seen below. Here you can see the device `rak-gateway` and its IP address on your network, in this instance being `10.0.0.145`.
 
 ![Screen Shot 2023-03-02 at 10 39 36 PM](https://user-images.githubusercontent.com/126691160/222747746-953eb865-59ea-4b68-b61d-f293e17a98ef.png)
+
+5. Now return to your Terminal window and follow the same procedure as mentioned in the [orginal section](https://github.com/adamschreck/pea-pod/blob/main/Step-1%20Gateway%20and%20Computer%20Setup/Step-1%20Instructions.md#ssh-into-pi) of logging into your Pi. Specifically typing ssh pi@ then your Pi's IP address. In this case the command would be `ssh pi@10.0.0.145`
