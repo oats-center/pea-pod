@@ -172,4 +172,6 @@ After completing all of the above steps your Pi will no longer broadcast its loc
 
 ![Screen Shot 2023-03-02 at 10 39 36 PM](https://user-images.githubusercontent.com/126691160/222747746-953eb865-59ea-4b68-b61d-f293e17a98ef.png)
 
-5. Now return to your Terminal window and follow the same procedure as mentioned in the [orginal section](https://github.com/adamschreck/pea-pod/blob/main/Step-1%20Gateway%20and%20Computer%20Setup/Step-1%20Instructions.md#ssh-into-pi) of logging into your Pi. Specifically typing ssh pi@ then your Pi's IP address. In this case the command would be `ssh pi@10.0.0.145`
+5. Now return to your Terminal window and follow the same procedure as mentioned in the [orginal section](https://github.com/adamschreck/pea-pod/blob/main/Step-1%20Gateway%20and%20Computer%20Setup/Step-1%20Instructions.md#ssh-into-pi) of logging into your Pi. Specifically typing ssh pi@ then your Pi's IP address. In this case the command would be `ssh pi@10.0.0.145` and enter the password that you set up for your Pi. Once you have reached the screen shown below you have logged back in, and offically completed the `Step-1 Gateway and Computer Setup`!
+
+![Screen Shot 2023-03-03 at 11 48 26 AM](https://user-images.githubusercontent.com/126691160/222778897-bf607d00-a510-4f31-9698-addf72bef2ef.png)
