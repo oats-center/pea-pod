@@ -158,10 +158,16 @@ After completing all of the above steps your Pi will no longer broadcast its loc
 
 1. Reconnect your personal computer to your home internet.
 
-2. [how to find IP address on Iphone](https://www.howtogeek.com/796854/iphone-ip-address/)
+2. Identify your home internet's IP address. If you are unfamiliar with this, your router will likely have its IP address printed on its side. If this is not the case, you can find this information from any device connected to that internet network. Specifically you can go to your mobile phone's settings, if you need more information you can look to these links: 
 
-[steps to find IP addresses on Android, macOS, or Windows devices](https://help.joinposter.com/en/articles/5403165-how-to-check-ip-address-of-the-local-network-on-ios-android-and-windows-devices)
+[How to find IP address on Iphone](https://www.howtogeek.com/796854/iphone-ip-address/)
+
+[Steps to find IP addresses on Iphone, Android, macOS, or Windows devices](https://help.joinposter.com/en/articles/5403165-how-to-check-ip-address-of-the-local-network-on-ios-android-and-windows-devices)
+
+3. While connnected to your home internet, you can launch your prefered browser and enter your home internet's IP address in the top bar and click `enter`. This should prompt a page similar to the one shown below. After navigating to this page, you can login to your router simply with your home internet's SSID as the username and your regular internet password.
 
 ![Screen Shot 2023-03-02 at 10 33 54 PM](https://user-images.githubusercontent.com/126691160/222747624-2dec4c9a-24a4-46c6-ba7e-b0460ff93cd9.png)
+
+4. From here you will need to locate what can be refered to as the DHCP Client Table. This table is list of all of the devices connected to your home internet and other important information. Each router is different, so take note of the brand of router that you have consider searching something similar to `How to find client table on linksys router` and look for articles similar to [this](https://www.linksys.com/gb/support-article/?articleNum=316202). You should be able to locate a table that appears like the one seen below. Here you can the device `rak-gateway` and its IP address on your network `10.0.0.145`.
 
 ![Screen Shot 2023-03-02 at 10 39 36 PM](https://user-images.githubusercontent.com/126691160/222747746-953eb865-59ea-4b68-b61d-f293e17a98ef.png)
