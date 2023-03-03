@@ -118,7 +118,7 @@ Now select `2 ChirpStack ADR configure`. This option allows you to choose whethe
 
 ### Setup Home Internet
 
-THIS STEP WILL RESULT IN CHANGING THE IP ADDRESS OF THE Pi AND HOW YOU LOGIN, IF YOU NEED TO RETURN TO THE ORIGINAL DESCRIPTION FOLLOW [THIS LINK](https://github.com/adamschreck/pea-pod/blob/main/Step-1%20Gateway%20and%20Computer%20Setup/Step-1%20Instructions.md#connecting-to-the-pi)
+THIS STEP WILL RESULT IN CHANGING THE IP ADDRESS OF THE Pi AND HOW YOU LOGIN, IF YOU NEED TO RETURN TO THE ORIGINAL DESCRIPTION OF WHAT THIS WILL DO FOLLOW [THIS LINK](https://github.com/adamschreck/pea-pod/blob/main/Step-1%20Gateway%20and%20Computer%20Setup/Step-1%20Instructions.md#connecting-to-the-pi)
 
 1. Begin by navigating from main menu down to `5 Configure WIFI` and click `Enter`. This will prompt the screen below.
 
@@ -132,15 +132,25 @@ Within the ***Configure wifi*** menu the sections coordinate to these actions:
 - Add New SSID for Client - this is used if you want to connect to a new Wi-Fi Network. Only works in Wi-Fi Client mode.
 - Change Wi-Fi Country - this is used to modify the resident country to match Wi-Fi standards.
 
+2. To enable Wi-Fi Client Mode (your Pi being a client of your home internt's router), you have to disable AP mode first. Do this by choosing `2 Enable Client Mode/Disable AP ModeOnce Wi-Fi AP Mode`. Once this is disabled, you can now connect to your home internet's Wi-Fi Network by choosing `4 Add New SSID for Client.`
+
+Begin by choosing your local region, for example `US - United States` then select `OK`
 
 ![region](https://user-images.githubusercontent.com/126691160/222606382-9a1256f6-e28c-4a56-abf7-5680212fa176.png)
 
+Now enter the SSID (service set identifier) of your home internet. The SSID being your network name, for example `xfinitywifi'. MAKE SURE TO INPUT THE CORRECT WIFI SSID AND PASSWORD, AS ENTERING EVEN ONE INCORRENT CHARACTER WILL IMPACT YOUR ABILITY TO SSH INTO YOUR Pi.
+
 ![set-wifi](https://user-images.githubusercontent.com/126691160/222606572-86336899-d8a6-47a1-8478-0b96124503d8.png)
+
+Now type your home internet's password. If there is none then leave this field empty. Select `OK`.
 
 ![set-password](https://user-images.githubusercontent.com/126691160/222606628-1f08560b-96fd-4162-84af-45e61cb77384.png)
 
+## Exit and Reboot
 
-Within the `4 Add New SSID for Client`
+1. From the main menu select `Quit` to exit the Pi's user interface and return to the Terminal window. 
+
+2. Lastly, reboot the gateway using the command shown below and put it in the command line. `sudo reboot`
 
 
 
