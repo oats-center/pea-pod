@@ -150,7 +150,7 @@ Now type your home internet's password. If there is none then leave this field e
 
 1. From the main menu select `Quit` to exit the Pi's user interface and return to the Terminal window. 
 
-2. Lastly, reboot the gateway using the command shown below and put it in the command line. `sudo reboot`
+2. Lastly, reboot the gateway by typing `sudo reboot` in the command line then `enter`.
 
-
+## Logging Back in to Gateway
 
