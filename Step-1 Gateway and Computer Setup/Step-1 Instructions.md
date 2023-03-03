@@ -108,7 +108,7 @@ For now select `1 ChirpStack Channel-plan configuration`. The screen below will 
 
 ![chirpstack-channel-plan](https://user-images.githubusercontent.com/126691160/222556831-9fdc9d86-8cd9-4ce5-98f0-e0416dd86e8e.png)
 
-This will allow you to select your regional frequency band, here in the US LoRa uses 915 MhZ, so if you are in the US select option `10 US_902_928`. The screen below will be prompted and ask for you to assign the IP address for Chirpstack. The default IP that you should enter is `127.0.0.1` then select `OK` to return to the ***ChirpStack Channel-plan configuration**
+This will allow you to select your regional frequency band, here in the US LoRa uses 915 MHz, so if you are in the US select option `10 US_902_928`. The screen below will be prompted and ask for you to assign the IP address for Chirpstack. The default IP that you should enter is `127.0.0.1` then select `OK` to return to the ***ChirpStack Channel-plan configuration**
 
 ![loraserver_ip](https://user-images.githubusercontent.com/126691160/222552326-b1439149-6579-4f66-b3e0-b85d55bb5c4a.png)
 
@@ -138,7 +138,7 @@ Begin by choosing your local region, for example `US - United States` then selec
 
 ![region](https://user-images.githubusercontent.com/126691160/222606382-9a1256f6-e28c-4a56-abf7-5680212fa176.png)
 
-Now enter the SSID (service set identifier) of your home internet. The SSID being your network name, for example `xfinitywifi'. MAKE SURE TO INPUT THE CORRECT WIFI SSID AND PASSWORD, AS ENTERING EVEN ONE INCORRENT CHARACTER WILL IMPACT YOUR ABILITY TO SSH INTO YOUR Pi.
+Now enter the SSID (service set identifier) of your home internet. The SSID being your network name, for example `xfinitywifi`. MAKE SURE TO INPUT THE CORRECT WIFI SSID AND PASSWORD, AS ENTERING EVEN ONE INCORRENT CHARACTER WILL IMPACT YOUR ABILITY TO SSH INTO YOUR Pi. Select `OK`.
 
 ![set-wifi](https://user-images.githubusercontent.com/126691160/222606572-86336899-d8a6-47a1-8478-0b96124503d8.png)
 
@@ -150,7 +150,16 @@ Now type your home internet's password. If there is none then leave this field e
 
 1. From the main menu select `Quit` to exit the Pi's user interface and return to the Terminal window. 
 
-2. Lastly, reboot the gateway by typing `sudo reboot` in the command line then `enter`.
+2. Lastly, reboot the gateway by typing `sudo reboot` in the command line then `enter`. This is a necessary step in order to enact and save the changes that you have made. By rebooting you will also become logged out of your Pi, to restablish your connection you will need to follow the steps of the section below.
 
 ## Logging Back in to Gateway
 
+1. 
+
+2. [how to find IP address on Iphone](https://www.howtogeek.com/796854/iphone-ip-address/)
+
+[steps to find IP addresses on Android, macOS, or Windows devices](https://help.joinposter.com/en/articles/5403165-how-to-check-ip-address-of-the-local-network-on-ios-android-and-windows-devices)
+
+![Screen Shot 2023-03-02 at 10 33 54 PM](https://user-images.githubusercontent.com/126691160/222747624-2dec4c9a-24a4-46c6-ba7e-b0460ff93cd9.png)
+
+![Screen Shot 2023-03-02 at 10 39 36 PM](https://user-images.githubusercontent.com/126691160/222747746-953eb865-59ea-4b68-b61d-f293e17a98ef.png)
