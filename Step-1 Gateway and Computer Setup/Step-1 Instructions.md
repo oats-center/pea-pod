@@ -45,7 +45,7 @@ The steps below will show the Wi-Fi AP mode, but in depth details of connecting 
 
 ### Locate and connect to network
 
-1. Similar to how one may go about setting up a printer at home, the first step is to locate and connect to the local network of the device. To do this open your personal computer's network settings, which is wherever you would go to connect to a new Wi-Fi. In the case of a printer the network may be called something like "HP-ENVY5000", but in this case the default network name will appear in your Wi-Fi network list as "Rakwireless_XXXX" with the last 4 XXXX digits representing the MAC address (an identifier) of your gateway/Pi. After locating and selecting the network, you will be prompted to input the password. The default password for the local network is ***rakwireless***. An example can be seen in the image below.
+1. Similar to how one may go about setting up a printer at home, the first step is to locate and connect to the local network of the device. To do this open your personal computer's network settings, which is wherever you would go to connect to a new Wi-Fi. In the case of a printer the network may be called something like `HP-ENVY5000`, but in this case the default network name will appear in your Wi-Fi network list as `Rakwireless_XXXX` with the last 4 XXXX digits representing the MAC address (an identifier) of your gateway/Pi. After locating and selecting the network, you will be prompted to input the password. The default password for the local network is ***rakwireless***. An example can be seen in the image below.
 
 ![Screen Shot 2023-03-01 at 9 56 29 PM](https://user-images.githubusercontent.com/126691160/222512913-850ad311-5929-466b-bcb9-e09d09c00f9f.png)
 
@@ -154,7 +154,9 @@ Now type your home internet's password. If there is none then leave this field e
 
 ## Logging Back in to Gateway
 
-1. 
+After completing all of the above steps your Pi will no longer broadcast its local network, orignially appearing as some variation of `Rakwireless_XXXX` in your network list, it will no longer be visable here. Instead, your Pi is now a client or resident living on your home internet's router. To be able to ssh or login to your Pi you will need to determine the address of where it is currently living, specifically what its new address is on your router. This address will change as you add and remove devices from your home internet, so you should re-visit these steps if in the future the IP address that you would login with no longer works. 
+
+1. Reconnect your personal computer to your home internet.
 
 2. [how to find IP address on Iphone](https://www.howtogeek.com/796854/iphone-ip-address/)
 
