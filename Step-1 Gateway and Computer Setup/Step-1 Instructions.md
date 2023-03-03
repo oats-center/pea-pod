@@ -75,7 +75,7 @@ This should prompt you to have to input your computer's password and click `ente
 
 ### Login to the Pi's User Interface
 
-1. In your Terminal window type `sudo gateway-config` then click `enter`. This will lauch the Pi's User Interface shown below. You can navigate through the different sections using your keyboard's arrow keys and by clicking `enter`. The image below will later be refered to as the main menu.
+1. In your Terminal window type `sudo gateway-config` then click `enter`. This will lauch the Pi's User Interface shown below. You can navigate through the different sections using your keyboard's arrow keys and by clicking `enter`. The image below will later be refered to as the ***main menu***.
 
 ![config-options](https://user-images.githubusercontent.com/126691160/222538235-df61a6e5-3b84-4563-8105-c09ecbecda86.png)
 
@@ -120,6 +120,27 @@ Now select `2 ChirpStack ADR configure`. This option allows you to choose whethe
 
 THIS STEP WILL RESULT IN CHANGING THE IP ADDRESS OF THE Pi AND HOW YOU LOGIN, IF YOU NEED TO RETURN TO THE ORIGINAL DESCRIPTION FOLLOW [THIS LINK](https://github.com/adamschreck/pea-pod/blob/main/Step-1%20Gateway%20and%20Computer%20Setup/Step-1%20Instructions.md#connecting-to-the-pi)
 
-1. Begin by navigating from main menu down to `4 Add New SSID for Client`
+1. Begin by navigating from main menu down to `5 Configure WIFI` and click `Enter`. This will prompt the screen below.
 
 ![wifi-ssid](https://user-images.githubusercontent.com/126691160/222596823-6c189999-78a5-442c-a5e9-015b190e31a6.png)
+
+Within the ***Configure wifi*** menu the sections coordinate to these actions:
+
+- Enable AP Mode/Disable Client Mode - the gateway will work in Wi-Fi Access Point mode after rebooting, while the Wi-Fi Client Mode will be disabled (this is the default mode).
+- Enable Client Mode/Disable AP Mode - the gateway will work in Wi-Fi Client mode after rebooting, while Wi-Fi AP mode will be disabled.
+- Modify SSID and pwd for AP Mode - used to modify the SSID and password of the Wi-Fi AP. Only works if the Wi-Fi AP mode is enabled.
+- Add New SSID for Client - this is used if you want to connect to a new Wi-Fi Network. Only works in Wi-Fi Client mode.
+- Change Wi-Fi Country - this is used to modify the resident country to match Wi-Fi standards.
+
+
+![region](https://user-images.githubusercontent.com/126691160/222606382-9a1256f6-e28c-4a56-abf7-5680212fa176.png)
+
+![set-wifi](https://user-images.githubusercontent.com/126691160/222606572-86336899-d8a6-47a1-8478-0b96124503d8.png)
+
+![set-password](https://user-images.githubusercontent.com/126691160/222606628-1f08560b-96fd-4162-84af-45e61cb77384.png)
+
+
+Within the `4 Add New SSID for Client`
+
+
+
