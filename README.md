@@ -32,7 +32,7 @@ Prerequisites for completing this project:
 
 For those who have no coding or computer science background this project may seem intimidating, and issues may occur along the way for which this manual does not include a solution. Each component of this system has been chosen for the existing documentation provided by the manufacturers and the amount of community support. This means that with persistence and a problem-solving mindset nearly anything can be solved with online searching. For those with domain expertise, this system can be a jumping off point. If there is a sensor that you want to add, other data that you want to pull in, or an all togehter different approach that you would like to take then this can be a strong base to build from. Ultimately this is a flexible and use case dependent system where several options will be presented, so choose what's best for you! For example: if you have internet access at the site of deployment and want real time data, then implement the Step-5 Cloudflare Tunnel option. 
 
-Below is a diagram describing how the pea-POD architecture operates:
+### Diagram Describing pea-POD Architecture
 
 ![LoRaWAN Architecture Diagram](https://user-images.githubusercontent.com/126691160/222314712-d92d4ce6-192b-450c-a3b9-abc11066ab1f.jpeg)
 

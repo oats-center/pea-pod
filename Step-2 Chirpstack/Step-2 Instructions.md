@@ -1,6 +1,58 @@
 # **Overview**
 
+Within the pea-PODs architecture Chirpstack serves the purpose of 
+
 # **Steps**
+
+## Login to Chirpstack
+
+
+
+## Chirpstack configuration
+
+Chirpstack can be accessed in one of two ways:
+
+- If you are connected to the POD Wi-Fi, then visit `10.60.0.1:8080` in your browser.
+- If you use Cloudflare tunnels, then visit your Chripstack tunnel URL.
+  - For example, `pod-acre-welch-cs.oatscenter.org`
+
+### Change the default login
+
+The default username and password is: `admin / admin`.
+We recommend that you at least change the password, particularly if you are using Cloudflare tunnels.
+This can be done by clicking the word `admin` in the top right corner of the screen and choosing `change password`.
+You may change it to whatever you want, but don't forget it!
+
+### Adding the physical gateway
+
+Select `Gateways` from the left menu panel under `Tenant`, and choose `Add gateway`.
+Use these settings:
+
+- Gateway name: Something that uniquely identifies the gateway. For our RAK 7289 we used `RAK7289C_4D65`.
+- Gateway description: We used `RAK7289 Gateway attached to POD`
+- Gateway ID: Your gateway manual should describe how to locate this.
+- Choose `Submit`.
+
+After a few minutes, refresh the "Gateways" page until the `Last seen` column as a time or `a few seconds ago` rather than `Never`.
+### Create your POD application
+
+Applications in Chirpstack hold a set of devices to communicate with.
+They also control how the received device data is set to integrated systems, like Thingsboard.
+
+To create an application, go to Applications from the left panel menu, and select `+ CREATE`.
+Please use these settings:
+
+- Application name: `POD-Kit`
+- Application description: `POD Kit Sensors`
+- Service-profile: `POD Profile`
+
+Select `CREATE APPLCATION`
+
+Add Thingsboard integration
+- Go to the Integrations tab within `POD-Kit`
+- Under Thingsboard.io click `ADD`
+- For the thingsboard.io server use `http://thingsboard:9090`
+- Click `Update Integration` 
 
 ## Enable Integration
 PostgreSQL
