@@ -1,20 +1,18 @@
 # **Overview**
 
-Within the pea-PODs architecture Chirpstack serves the purpose of 
+One of the benefits of the RAK developer gateway used for this project is that it comes pre-installed with Chirpstack, you can refer back to the [Step-1 Instructions](https://github.com/adamschreck/pea-pod/blob/main/Step-1%20Gateway%20and%20Computer%20Setup/Step-1%20Instructions.md#setup-rak-gateway-channel-plan) to see where you enabled Chirpstack. Within the pea-PODs architecture Chirpstack serves the purpose of both the network server and the application server. Refer back to this [diagram](https://github.com/adamschreck/pea-pod#diagram-describing-pea-pod-architecture) for more context on what that means. In addition the pea-POD leverages an integration created by Chirpstack to store data collected in a PostgreSQL server. This will allow for easy access and retrieval of the data. The below steps will explain how to login to Chirpstack, which if you have completed the ***Step-1 Instructions*** is already runnning on your Pi. Additionally, this will pull in formation directly from the [original POD build guide](https://github.com/oats-center/pod/blob/main/build-guide.md) regarding how to get started with Chirpstack. After this, other content has been sourced from [Chirpstack's guide to setting up the PostgrsSQL integration](https://www.chirpstack.io/application-server/integrations/postgresql/). 
 
 # **Steps**
 
 ## Login to Chirpstack
 
-
-
-## Chirpstack configuration
-
 Chirpstack can be accessed in one of two ways:
+- If you are connected to the same home internet as the Pi, then visit `your router's IP address:8080` in your browser.
 
-- If you are connected to the POD Wi-Fi, then visit `10.60.0.1:8080` in your browser.
-- If you use Cloudflare tunnels, then visit your Chripstack tunnel URL.
-  - For example, `pod-acre-welch-cs.oatscenter.org`
+- If you use Cloudflare tunnels, detailed in `Step-5 Instructions`then you can visit your Chripstack tunnel URL.
+  - For example, `pea-pod-adam-cs.oatscenter.org`
+
+## Setup your Chirpstack
 
 ### Change the default login
 
