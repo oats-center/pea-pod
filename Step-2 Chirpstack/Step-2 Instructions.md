@@ -7,19 +7,23 @@ One of the benefits of the RAK developer gateway used for this project is that i
 ## Login to Chirpstack
 
 Chirpstack can be accessed in one of two ways:
-- If you are connected to the same home internet as the Pi, then visit `your router's IP address:8080` in your browser.
+- If you are connected to the same internet as the Pi, then visit `your Pi's IP address:8080` in your browser. The 8080 refers to what is known as the "port number", which identifies where that program is running on the device.
+  - For example: `10.0.0.145:8080`
 
-- If you use Cloudflare tunnels, detailed in `Step-5 Instructions`then you can visit your Chripstack tunnel URL.
-  - For example, `pea-pod-adam-cs.oatscenter.org`
+ In this case it is saying that the Chirpstack program is running on port `8080` of the Pi called `10.0.0.145`.
+
+- If you use Cloudflare tunnels, detailed in `Step-5 Instructions`, then you can visit your Chripstack tunnel URL.
+  - For example: `pea-pod-adam-cs.oatscenter.org`
 
 ## Setup your Chirpstack
 
 ### Change the default login
 
-The default username and password is: `admin / admin`.
-We recommend that you at least change the password, particularly if you are using Cloudflare tunnels.
+The default username and password is: `admin / admin`. It is recommended that you at least change the password, particularly if you are using Cloudflare tunnels.
 This can be done by clicking the word `admin` in the top right corner of the screen and choosing `change password`.
 You may change it to whatever you want, but don't forget it!
+
+![Screen Shot 2023-03-04 at 2 50 40 PM](https://user-images.githubusercontent.com/126691160/222926003-13bd44a7-469f-49a8-9a9a-43f37a55007b.png)
 
 ### Adding the physical gateway
 
@@ -32,6 +36,7 @@ Use these settings:
 - Choose `Submit`.
 
 After a few minutes, refresh the "Gateways" page until the `Last seen` column as a time or `a few seconds ago` rather than `Never`.
+
 ### Create your POD application
 
 Applications in Chirpstack hold a set of devices to communicate with.
@@ -45,12 +50,6 @@ Please use these settings:
 - Service-profile: `POD Profile`
 
 Select `CREATE APPLCATION`
-
-Add Thingsboard integration
-- Go to the Integrations tab within `POD-Kit`
-- Under Thingsboard.io click `ADD`
-- For the thingsboard.io server use `http://thingsboard:9090`
-- Click `Update Integration` 
 
 ## Enable Integration
 PostgreSQL
