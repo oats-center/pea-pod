@@ -52,44 +52,50 @@ Please use these settings:
 Select `CREATE APPLCATION`
 
 ## Enable Integration
-PostgreSQL
-The PostgreSQL integration writes all device related events into a PostgreSQL database, so that it can be queried by other applications or so that it can be visualized using for example Grafana using the PostgreSQL Data Source.
 
-If the integration is enabled, it will automatically create all database tables on startup. It is important that this integration uses its own database, to avoid schema collisions.
+The PostgreSQL integration writes all device related events logged in Chirpstack into a PostgreSQL database. This allows your device data to be queried or used by other applications. Specifically in the instance of the pea-POD, so that it can be visualized using Grafana.
 
-Create the database
+Within Chirpstack, once you have set up a device such as a sensor, it is possible to view device data. Additionally, Chirpstack natively stores this device data in a PostgresSQL server. However, data stored in that database is only kept temporarily. To overcome this, the PostgresSQL integration can be enabled. If the integration is enabled, it will automatically create all database tables on startup. It is important that this integration uses its own database, to avoid schema collisions.
+
+### Create the database
+
 Please see below an example for creating the PostgreSQL database. Depending your PostgreSQL installation, these commands might be different.
 
-Enter the PostgreSQL as the postgres user:
+1. Begin from your Terminal command line and logged into your PI.
+
+2. Enter the PostgreSQL as the postgres user:
 
     sudo -u postgres psql
 
-Within the PostgreSQL prompt, enter the following queries:
+***Within the PostgreSQL prompt, enter the following queries:***
 
+3. Create the chirpstack_as_events user
 
--- create the chirpstack_as_events user
     create role chirpstack_as_events with login password 'dbpassword';
 
--- create the chirpstack_as_events database
+4. Create the chirpstack_as_events database
+
     create database chirpstack_as_events with owner chirpstack_as_events;
 
--- enable the hstore extension
+5. Enable the hstore extension
+
     \c chirpstack_as_events
     create extension hstore;
 
--- exit the prompt
+6. Exit the prompt
+
     \q
-To verify if the user and database have been setup correctly, try to connect to it:
+
+7. To verify if the user and database have been setup correctly, try to connect to it:
 
     psql -h localhost -U chirpstack_as_events -W chirpstack_as_events
 
-Activating the integration
+### Activate the integration***
 
 In order for ChirpStack to start writing event data to a Postgres database, the integration must be explicitly enabled and configured in the `chirpstack-application-server.toml` configuration file.
 
 Enabling the integration
 In the file, find this section:
-
 
     [application_server.integration]
 
