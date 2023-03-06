@@ -1,6 +1,16 @@
 # **Overview**
 
+Possible sensors to be used with any LoRaWAN network include a variety of options in both type of measurement and brand. While not specifically identified as LoRaWAN sensors, if properly wired and configured with a LoRaWAN specific sensor node, many options below $100 become available. For demonstration purposes a selection of five sensors was made to accompany the PODs kit when deployed. These sensors were selected to be able to measure metrics felt to be valuable to most operational decisions; including rainfall, temperature, soil moisture, relative humidity, sunlight, and location. In the majority of installations three sensors, the Davis rain gauge tipping bucket, Vegetronix soil moisture sensor, and TEWA thermistor, were wired to a singular Digital Matter SensorNode. One Tektelic Agricultural Surface Sensor was provided with the ability to sense soil moisture and temperature, ambient humidity and environmental temperature, and light detection and measurement. Two Digital Matter Oyster GPS trackers were included with the intent to track assets or machine activity through a field. The entire sensor suite is shown below in Fig. 5 and described in further detail in Table 2. as the bill of materials. Total cost of a set of six sensors and related supplies was nearly $385. For the PODs and pea-PODs project a suite of 
+
+# **Hardware**
+
+| ID     | Description | Component Name | Manufacturer | Approximate Per Unit Cost | URL |
+| -------| ----------- | -------------- | ------------ | ------------------------- | ----------- |
+| 17 | Sensor Node | SensorNode LoRaWAN | Digital Matter | $133.48 | tinyurl.com/4sx9v3b6 |
+| 18 | Rain gauge | Davis AeroCone Rain Gauge with Mountable Base | Davis Instruments | $97.5 | tinyurl.com/29emn9ym |
+
 # **Steps**
+
 ### Create device profile: Digital Matter Oyster
 
 Create a device profile by selecting "Device-profiles" from the left panel menu, and hitting `+ CREATE`.
