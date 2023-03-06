@@ -62,38 +62,38 @@ Once you have set up a device, such as a sensor, Chirpstack will natively store 
 
 Please see below an example for creating the PostgreSQL database. Depending your PostgreSQL installation, these commands might be different.
 
-1. Begin from your Terminal command line and logged into your PI.
+Begin from your Terminal command line and logged into your PI.
 
-2. Enter the PostgreSQL as the postgres user:
+Enter the PostgreSQL as the postgres user:
 
     sudo -u postgres psql
 
 ***Within the PostgreSQL prompt, enter the following:***
 
-3. Create the chirpstack_as_events user
+Create the chirpstack_as_events user
 
     create role chirpstack_as_events with login password 'dbpassword';
 
-4. Create the chirpstack_as_events database
+Create the chirpstack_as_events database
 
     create database chirpstack_as_events with owner chirpstack_as_events;
 
-5. Enable the hstore extension
+Enable the hstore extension
 
     \c chirpstack_as_events
     create extension hstore;
 
-6. Exit the prompt
+Exit the prompt
 
     \q
 
-7. To verify if the user and database have been setup correctly, try to connect to it:
+To verify if the user and database have been setup correctly, try to connect to it:
 
     psql -h localhost -U chirpstack_as_events -W chirpstack_as_events
 
 ### Activate the integration
 
-1. In order for ChirpStack to start writing event data to a Postgres database, the integration must be explicitly enabled and configured in the `chirpstack-application-server.toml` configuration file.
+In order for ChirpStack to start writing event data to a Postgres database, the integration must be explicitly enabled and configured in the `chirpstack-application-server.toml` configuration file.
 
 To find this file in your Pi use the command:
 
@@ -119,8 +119,8 @@ To instead say:
 
 Your enabled line may look slightly different, as you may have other integrations already active.
 
-2. Next, you must also set the configuration settings for the integration. If your configuration file does not already contain the following section, add it now:
-    
+Next, you must also set the configuration settings for the integration. If your configuration file does not already contain the following section, add it now:
+
     [application_server.integration.postgresql]
     dsn="postgres://<username>:<password>@<host>/<database>?sslmode=disable"
 
@@ -135,7 +135,7 @@ Here is how your file should appear with the new additons:
 
 To exit nano and save the changes you can follow the commands listed at the bottom. In the case of Mac the sequence is `control` + `X` or `^X` then `Y` for yes and `enter`
 
-3. Within your terminal window you must now restart the Chirpstack applicaiton server to enact the file changes that you have made. To do this enter the command below:
+Within your terminal window you must now restart the Chirpstack applicaiton server to enact the file changes that you have made. To do this enter the command below:
 
     sudo systemctl restart chirpstack-application-server
 
