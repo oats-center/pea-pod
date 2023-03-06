@@ -1,10 +1,12 @@
 # **Overview**
 
+Within the pea-PODs architecture Grafana serves the purpose of the Data visualizer. Refer back to this [diagram](https://github.com/adamschreck/pea-pod#diagram-describing-pea-pod-architecture) for more context on what that means. Essentially, Granfana is a tool that turns the device data stored in the PostgresSQL database created by Chirpstack into graphs and visualizaitons that can be easily interpreted by viewers. Granfana is easily customizable, and examples of dashboards that you can copy from can be found [here](https://grafana.com/grafana/dashboards/) on their community dashboards page. 
+
 # **Steps**
 
 ## Getting Started
 
-The steps and figures in this section are almost fully sourced directly from an article on PiMyLifeUp written by the user Emmet titled "Setting up Grafana on the Raspberry Pi" and can be found at [this link](https://pimylifeup.com/raspberry-pi-grafana/)
+The steps and figures in this section are almost fully sourced directly from an article on PiMyLifeUp written by the user Emmet titled "Setting up Grafana on the Raspberry Pi" and can be found at [this link](https://pimylifeup.com/raspberry-pi-grafana/). His description explains the purpose of each step while also providing the necessary Terminal commands.
 
 ### Installing Grafana to the Raspberry Pi
 
@@ -55,7 +57,9 @@ This command will tell the systems service manager to enable the service file ca
 
 The service manager will use this file as a guide on how to deal with the Grafana server.
 
-7. Finally, let’s start up the Grafana server software by running the command below in the Pi’s terminal.
+7. Finally, let’s start up the Grafana server software.
+
+Run the command below in the Pi’s terminal.
 
     sudo systemctl start grafana-server
 
@@ -96,3 +100,19 @@ To proceed to the Grafana dashboard, go ahead and enter a new password (1.) then
 This screen means that you are now ready to start adding data sources and setting up your Grafana dashboard on your Raspberry Pi.
 
 ![Raspberry-Pi-Grafana-03-Initial-Setup-Complete Medium](https://user-images.githubusercontent.com/126691160/223205062-e4f26e85-6c5c-4d75-beb3-60b5e336cfbc.jpeg)
+
+## Setting up Data Source
+
+1. On the bottom left locate the settings icon and navigate to the `Data Sources` section
+
+![Screen Shot 2023-03-06 at 2 23 30 PM](https://user-images.githubusercontent.com/126691160/223210593-fc883c7e-766a-47ae-a70b-617d7e8bb418.png)
+
+2. Currently this page will be empty as there are not any Data Sources setup yet, to add one select `ADD Data Source` 
+
+![Screen Shot 2023-03-06 at 2 23 01 PM](https://user-images.githubusercontent.com/126691160/223211068-21cc23c1-409d-411e-9d1d-921cc02478af.png)
+
+3. Scroll through the available options and choose PostgresSQL
+
+4. After selecting this, PostgresSQL should appear in the data sources list. Select the PostgresSQL source and it will prompt the screen below. Enter in the settings as shown, if you have followed all of the instrucitons thus far, then the Database will be `chirpstack_as_events` the User will be `chirpstack_as_events` and the Password will be `dbpassword` as configured [here](https://github.com/adamschreck/pea-pod/blob/main/Step-2%20Chirpstack/Step-2%20Instructions.md#activate-the-integration)
+
+![Screen Shot 2023-03-06 at 2 24 05 PM](https://user-images.githubusercontent.com/126691160/223213109-01dd97af-fbf7-476e-9141-0196b929a9b5.png)
