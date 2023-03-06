@@ -6,8 +6,14 @@ Possible sensors to be used with any LoRaWAN network include a variety of option
 
 | ID     | Description | Component Name | Manufacturer | Approximate Per Unit Cost | URL |
 | -------| ----------- | -------------- | ------------ | ------------------------- | ----------- |
-| 17 | Sensor Node | SensorNode LoRaWAN | Digital Matter | $133.48 | tinyurl.com/4sx9v3b6 |
-| 18 | Rain gauge | Davis AeroCone Rain Gauge with Mountable Base | Davis Instruments | $97.5 | tinyurl.com/29emn9ym |
+| 1 | Sensor Node | SensorNode LoRaWAN | Digital Matter | $133.48 | [](tinyurl.com/4sx9v3b6) |
+| 2 | Rain gauge | Davis AeroCone Rain Gauge with Mountable Base | Davis Instruments | $97.5 | [](tinyurl.com/29emn9ym) |
+| 3 | Soil Moisture Sensor | Soil Moisture Sensor - 2 meter cable | Vegetronix | $48.95 | [](tinyurl.com/4w3ajju2) |
+| 4 | Air Temperature Sensor | NTC Thermistor 10k Probe | TEWA Sensors LLC | $4.20 | [](tinyurl.com/n7ka3pvt) |
+| 5 | Oyster (GPS) | Oyster LoRaWAN | Digital Matter | $121.50 | [](tinyurl.com/2etj39ps) |
+| 6 | Tektelic Ag Sensor (VWC, light, air temp, humdity) | Agricultural Surface Sensor | TEKTELIC Communications Inc. | $136.05 | [](tinyurl.com/mtj6t4z5) |
+
+![Sensors](https://user-images.githubusercontent.com/126691160/223175236-9b394e6f-4a9f-421d-9531-d138eb80b908.jpg)
 
 # **Steps**
 
