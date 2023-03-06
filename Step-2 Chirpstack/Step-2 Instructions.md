@@ -31,8 +31,8 @@ With the Chirpstack web UI pullled up in your browser, it will prompt you to log
 Select `Gateways` from the left menu panel under `Tenant`, and choose `Add gateway`.
 Use these settings:
 
-- Gateway name: Something that uniquely identifies the gateway. For our RAK 7289 we used `RAK7289C_4D65`.
-- Gateway description: We used `RAK7289 Gateway attached to POD`
+- Gateway name: Something that uniquely identifies the gateway. For our RAK 7244 we used `RAK7244`.
+- Gateway description: We used `RAK7244 Gateway attached to POD`
 - Gateway ID: Your gateway manual should describe how to locate this.
 - Choose `Submit`.
 
@@ -120,14 +120,14 @@ To instead say:
 Your enabled line may look slightly different, as you may have other integrations already active.
 
 2. Next, you must also set the configuration settings for the integration. If your configuration file does not already contain the following section, add it now:
-
+    
     [application_server.integration.postgresql]
     dsn="postgres://<username>:<password>@<host>/<database>?sslmode=disable"
 
-In the dns= line, modify <username>, <password>, <host>, and <database> with your appropriate credentials and targets. If you followed the example above, you would use chirpstack_as_events as your username and target database. If your target Postgres database is on the same machine as the Application Server, use localhost as your host. Following the above example, your new dns= line should appear as this:
+In the dns= line, modify `username`, `password`, `host`, and `database` with your appropriate credentials and targets. If you followed the example above, you would use chirpstack_as_events as your username and target database. If your target Postgres database is on the same machine as the Application Server, use localhost as your host. Following the above example, your new dns= line should appear as this:
 
-   [application_server.integration.postgresql]
-   dsn="postgres://chirpstack_as_events:dbpassword@localhost/chirpstack_as_events?sslmode=disable"
+    [application_server.integration.postgresql]
+    dsn="postgres://chirpstack_as_events:dbpassword@localhost/chirpstack_as_events?sslmode=disable"
 
 Here is how your file should appear with the new additons:
 
