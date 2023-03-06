@@ -1,21 +1,29 @@
 # **Overview**
 
-Possible sensors to be used with any LoRaWAN network include a variety of options in both type of measurement and brand. While not specifically identified as LoRaWAN sensors, if properly wired and configured with a LoRaWAN specific sensor node, many options below $100 become available. For demonstration purposes a selection of five sensors was made to accompany the PODs kit when deployed. These sensors were selected to be able to measure metrics felt to be valuable to most operational decisions; including rainfall, temperature, soil moisture, relative humidity, sunlight, and location. In the majority of installations three sensors, the Davis rain gauge tipping bucket, Vegetronix soil moisture sensor, and TEWA thermistor, were wired to a singular Digital Matter SensorNode. One Tektelic Agricultural Surface Sensor was provided with the ability to sense soil moisture and temperature, ambient humidity and environmental temperature, and light detection and measurement. Two Digital Matter Oyster GPS trackers were included with the intent to track assets or machine activity through a field. The entire sensor suite is shown below in Fig. 5 and described in further detail in Table 2. as the bill of materials. Total cost of a set of six sensors and related supplies was nearly $385. For the PODs and pea-PODs project a suite of 
+Possible sensors to be used with any LoRaWAN network include a variety of options in both type of measurement and brand. While not specifically identified as LoRaWAN sensors, if properly wired and configured with a LoRaWAN specific sensor node, many options become available. This makes this set of instructions very situation and use case dependent, and thus may not offer the same sort of assitance as other sections. 
+
+When planning the sensors that you will use in your data pipeline consider what information is important to your use case. If you are wanting to collect weather information then the sensors below may be appropriate. If not, or if there are additional data points that you want to collect, then with some searching you can likely find the right sensors for you. One place to start would be to purchase the [Dragino LSN50-V2 Sensor Node](https://www.digikey.com/en/products/detail/seeed-technology-co.,-ltd/113990820/16652879?utm_adgroup=RF%20Receiver%2C%20Transmitter%2C%20and%20Transceiver%20Finished%20Units&utm_source=google&utm_medium=cpc&utm_campaign=Shopping_Product_RF%2FIF%20and%20RFID_NEW&utm_term=&utm_content=RF%20Receiver%2C%20Transmitter%2C%20and%20Transceiver%20Finished%20Units&gclid=CjwKCAiAu5agBhBzEiwAdiR5tJAdWvo_F1_0obLfVvfQeP2EDNY0Y6JR-78-ETDYIk84oDZ6JDbiYRoCjG0QAvD_BwE) as it is one of the most widely available and widely documented LoRaWAN sensor nodes on the market. This build guide will not detail any projects with this specific sensor node. However, with this and other sensors and nodes that you source you can research and find CODEC's on various community forums such as the [Chirpstack Community for Devices](https://forum.chirpstack.io/c/devices/8) and [The Things Network Community for Devices](https://www.thethingsnetwork.org/forum/c/nodes/7).
+
+This set of instructions, like most of this entire build guide, is focused on creating the LoRaWAN network not specific devices or use cases. Thus, this is primarily intended to explain the steps necessary to set up the PODs kit devices on Chirpstack. The same steps are generally applicable to other sensors and nodes. These steps are not intended to explain the wiring of sensors and sensor nodes or other intricacies. These instructions will pull information directly from the [original POD build guide](https://github.com/oats-center/pod/blob/main/build-guide.md)
+
+For demonstration purposes a selection of five sensors was made to accompany the original PODs kit when deployed. These sensors were selected to be able to measure metrics felt to be valuable for most operational decisions; including rainfall, temperature, soil moisture, relative humidity, sunlight, and location. In the majority of installations three sensors, the Davis rain gauge tipping bucket, Vegetronix soil moisture sensor, and TEWA thermistor, were wired to a singular Digital Matter SensorNode. One Tektelic Agricultural Surface Sensor was provided with the ability to sense soil moisture and temperature, ambient humidity and environmental temperature, and light detection and measurement. Two Digital Matter Oyster GPS trackers were included with the intent to track assets or machine activity through a field. The entire sensor suite is shown below in the figure and described in greater detail in the table below.
 
 # **Hardware**
 
-| ID     | Description | Component Name | Manufacturer | Approximate Per Unit Cost | URL |
-| -------| ----------- | -------------- | ------------ | ------------------------- | ----------- |
-| 1 | Sensor Node | SensorNode LoRaWAN | Digital Matter | $133.48 | [](tinyurl.com/4sx9v3b6) |
-| 2 | Rain gauge | Davis AeroCone Rain Gauge with Mountable Base | Davis Instruments | $97.5 | [](tinyurl.com/29emn9ym) |
-| 3 | Soil Moisture Sensor | Soil Moisture Sensor - 2 meter cable | Vegetronix | $48.95 | [](tinyurl.com/4w3ajju2) |
-| 4 | Air Temperature Sensor | NTC Thermistor 10k Probe | TEWA Sensors LLC | $4.20 | [](tinyurl.com/n7ka3pvt) |
-| 5 | Oyster (GPS) | Oyster LoRaWAN | Digital Matter | $121.50 | [](tinyurl.com/2etj39ps) |
-| 6 | Tektelic Ag Sensor (VWC, light, air temp, humdity) | Agricultural Surface Sensor | TEKTELIC Communications Inc. | $136.05 | [](tinyurl.com/mtj6t4z5) |
-
 ![Sensors](https://user-images.githubusercontent.com/126691160/223175236-9b394e6f-4a9f-421d-9531-d138eb80b908.jpg)
 
+| ID     | Description | Component Name | Manufacturer | Approximate Per Unit Cost | URL |
+| -------| ----------- | -------------- | ------------ | ------------------------- | ----------- |
+| 1 | Sensor Node | SensorNode LoRaWAN | Digital Matter | $133.48 | [link](tinyurl.com/4sx9v3b6) |
+| 2 | Rain gauge | Davis AeroCone Rain Gauge with Mountable Base | Davis Instruments | $97.5 | [link](tinyurl.com/29emn9ym) |
+| 3 | Soil Moisture Sensor | Soil Moisture Sensor - 2 meter cable | Vegetronix | $48.95 | [link](tinyurl.com/4w3ajju2) |
+| 4 | Air Temperature Sensor | NTC Thermistor 10k Probe | TEWA Sensors LLC | $4.20 | [link](tinyurl.com/n7ka3pvt) |
+| 5 | Oyster (GPS) | Oyster LoRaWAN | Digital Matter | $121.50 | [link](tinyurl.com/2etj39ps) |
+| 6 | Tektelic Ag Sensor (VWC, light, air temp, humdity) | Agricultural Surface Sensor | TEKTELIC Communications Inc. | $136.05 | [link](tinyurl.com/mtj6t4z5) |
+
 # **Steps**
+
+## Creating Device Profiles
 
 ### Create device profile: Digital Matter Oyster
 
@@ -98,7 +106,7 @@ CODEC tab:
 
 Hit `CREATE DEVICE-PROFILE`
 
-### Create your POD application
+## Creating your POD application
 
 Applications in Chirpstack hold a set of devices to communicate with.
 They also control how the received device data is set to integrated systems, like Thingsboard.
@@ -118,6 +126,7 @@ Add Thingsboard integration
 - For the thingsboard.io server use `http://thingsboard:9090`
 - Click `Update Integration` 
 
+## Adding Devices
 
 ### Add device: Tektelic Ag Sensor
 
