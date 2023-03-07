@@ -8,6 +8,13 @@ This optional feature can be enabled in the pea-POD, but does require a free Clo
 
 # **Steps**
 
+## Signing up for Cloudflare
+
+[Visit this link](https://dash.cloudflare.com/sign-up) to sign up for your own Cloudflare account. Be sure to keep an eye on your email for a message to verify your account. 
+
+![Screen Shot 2023-03-07 at 11 26 54 AM Medium](https://user-images.githubusercontent.com/126691160/223487213-b526434c-1fa8-4f02-a818-ab0d1b93740f.jpeg)
+
+
 ## Registering a Domain
 
 There are several options for registering your own domain name. Both paid and free domains can be found depending on what you want your domain name to be called. In truth, your Cloudflare account simply needs a domain and it does not necessarily matter what it is called. With these needs in mind, this section will detail two method to register your own domain.
@@ -46,3 +53,7 @@ The benefit of gen.xyz is that they offer what are called 1.111B Class domains, 
 ![Screen Shot 2023-03-07 at 10 48 55 AM Medium](https://user-images.githubusercontent.com/126691160/223476576-9e793a3e-7107-409b-88be-eee8c380c1ed.jpeg)
 
 #### Cloudflare Domains
+
+
+
+![Screen Shot 2023-03-07 at 11 14 51 AM Medium](https://user-images.githubusercontent.com/126691160/223486823-bd0099e4-dbd5-42ab-90cb-46ba512aa59a.jpeg)
