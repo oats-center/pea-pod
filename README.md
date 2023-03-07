@@ -45,7 +45,7 @@ For those who have no coding or computer science background this project may see
 
 ### Hardware
 
-![IMG_5291 3 Medium](https://user-images.githubusercontent.com/126691160/223441576-b4426a7d-feee-41ee-a0c6-508c86dee2d0.jpeg)
+![IMG_5291 3 Small](https://user-images.githubusercontent.com/126691160/223442458-c517a8d4-0db8-4742-a5eb-d329bfbf25c3.jpeg)
 
 *THESE LINKS WERE ACTIVE AND AVAILABLE AT THE TIME OF PUBLISHING BUT MAY BE OUT OF STOCK AT THE TIME OF YOUR ACCESS.*
 
