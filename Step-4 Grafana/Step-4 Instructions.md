@@ -1,6 +1,6 @@
 # **Overview**
 
-Within the pea-PODs architecture Grafana serves the purpose of the Data visualizer. Refer back to this [diagram](https://github.com/adamschreck/pea-pod#diagram-describing-pea-pod-architecture) for more context on what that means. Essentially, Granfana is a tool that turns the device data stored in the PostgresSQL database created by Chirpstack into graphs and visualizaitons that can be easily interpreted by viewers. Granfana is easily customizable, and examples of dashboards that you can copy from can be found [here](https://grafana.com/grafana/dashboards/) on their community dashboards page. 
+Within the pea-PODs architecture Grafana serves the purpose of the Data visualizer. Refer back to this [diagram](https://github.com/adamschreck/pea-pod#diagram-describing-pea-pod-architecture) for more context on what that means. Essentially, Granfana is a tool that turns the device data stored in the PostgresSQL database created by Chirpstack into graphs and visualizations that can be easily interpreted by viewers. Granfana is easily customizable, and examples of dashboards that you can copy from can be found [here](https://grafana.com/grafana/dashboards/) on their community dashboards page. 
 
 # **Steps**
 
@@ -113,7 +113,7 @@ This screen means that you are now ready to start adding data sources and settin
 
 3. Scroll through the available options and choose PostgresSQL
 
-4. After selecting this, PostgresSQL should appear in the data sources list. Select the PostgresSQL source and it will prompt the screen below. Enter in the settings as shown, if you have followed all of the instrucitons thus far, then the Database will be `chirpstack_as_events` the User will be `chirpstack_as_events` and the Password will be `dbpassword` as configured [here](https://github.com/adamschreck/pea-pod/blob/main/Step-2%20Chirpstack/Step-2%20Instructions.md#activate-the-integration)
+4. After selecting this, PostgresSQL should appear in the data sources list. Select the PostgresSQL source and it will prompt the screen below. Enter in the settings as shown, if you have followed all of the instructions thus far, then the Database will be `chirpstack_as_events` the User will be `chirpstack_as_events` and the Password will be `dbpassword` as configured [here](https://github.com/adamschreck/pea-pod/blob/main/Step-2%20Chirpstack/Step-2%20Instructions.md#activate-the-integration)
 
 ![Screen Shot 2023-03-06 at 2 24 05 PM](https://user-images.githubusercontent.com/126691160/223213109-01dd97af-fbf7-476e-9141-0196b929a9b5.png)
 

@@ -1,6 +1,6 @@
 # **Overview**
 
-All POD's network services are only accessible by computers connected to the same network. That could be a computer or mobile device connected to the POD's local Wi-Fi network or a device connected to the same Wi-Fi network that the POD connects. In other words, the data stored on a POD can not be accessed from the Internet, even if the POD has Internet access.
+All POD's network services are only accessible by computers connected to the same network. That could be a computer or mobile device connected to the POD's local Wi-Fi network or a device connected to the same Wi-Fi network that the POD connects. In other words, the data stored on a POD cannot be accessed from the Internet, even if the POD has Internet access.
 
 Cloudflare tunnels fix that. Through the use of a Cloudflare tunnel, the POD services can be accessed from anywhere in the world via the Internet in a selected and controlled way. For example, you could expose Grafana which would allow you to view your data, after entering your username and password, from anywhere. Chripstack, monitoring services, and SSH can also be exposed to afford easier device management, software upgrading, and real-time POD monitoring.
 
@@ -21,7 +21,7 @@ There are several options for registering your own domain name. Both paid and fr
 
 ### Option 1: Freenom and the extension .tk
 
-Freenom is a site that allows for the registrarion of domains using the few extensions that offer free domain registrations, one of these being `.tk` which you can register for up to one year at a time. At the time of creating the domain for the first pea-POD the steps below were used. However after recently visiting Freenom it appears that they are having technical issues with new registrations. At the time of your access these issues may be resolved, if not it is suggested that you use the next option's steps.
+Freenom is a site that allows for the registration of domains using the few extensions that offer free domain registrations, one of these being `.tk` which you can register for up to one year at a time. At the time of creating the domain for the first pea-POD the steps below were used. However after recently visiting Freenom it appears that they are having technical issues with new registrations. At the time of your access these issues may be resolved, if not it is suggested that you use the next option's steps.
 
 1. Sign into [Freenom](https://my.freenom.com/clientarea.php) using your Google or Facebook account. There are other ways to create an account, however this involves the least amount of complication.
 
@@ -31,7 +31,7 @@ Freenom is a site that allows for the registrarion of domains using the few exte
 
 ![Screen Shot 2023-03-07 at 9 27 22 AM Medium](https://user-images.githubusercontent.com/126691160/223451528-0fe5a5ba-7db7-4e22-963e-248c3a57ac40.jpeg)
 
-3. From the `Find your new Domain` box search your desired domain with the extsion .tk added to the end and click `Check Availability`. See the image below as an example. Your desired domain may or may not be available for registration. If you do not search with the extension `.tk` at the end Freenom will always say that that name is taken, even if the domain is truly available.
+3. From the `Find your new Domain` box search your desired domain with the extension .tk added to the end and click `Check Availability`. See the image below as an example. Your desired domain may or may not be available for registration. If you do not search with the extension `.tk` at the end Freenom will always say that that name is taken, even if the domain is truly available.
 
 ![Screen Shot 2023-03-07 at 9 32 46 AM](https://user-images.githubusercontent.com/126691160/223465748-c07c7a31-b225-4951-b1c0-7574258bac55.png)
 
@@ -44,7 +44,7 @@ Freenom is a site that allows for the registrarion of domains using the few exte
 
 ### Option 2: Paid Domains
 
-In truth there are not many free ways to register a domain name today. If Freenom and extensions such as .tk are not available, then there are essentially no truly free domain options. As an alternative, you can use any number of domain registration sites such as Google Domains. By paying you will have more choice on the name and can hold the registration for longer than the terms of Freenom. Prefered sites for paid domain registration can be found below. 
+In truth there are not many free ways to register a domain name today. If Freenom and extensions such as .tk are not available, then there are essentially no truly free domain options. As an alternative, you can use any number of domain registration sites such as Google Domains. By paying you will have more choice on the name and can hold the registration for longer than the terms of Freenom. Preferred sites for paid domain registration can be found below. 
 
 #### gen.xyz and the extension .xyz
 
@@ -56,13 +56,13 @@ The benefit of gen.xyz is that they offer what are called 1.111B Class domains, 
 
 In addition to other services, Cloudflare offers the ability to purchase domains through your account. While slightly more expensive than the gen.xyz option, Cloudflare allows more choices in what your domain name will be and what extension it will use. This allows for non-numerical domains and domains that may be more in line with your project such as `pea-pods-adam.com`. Depending on your preferences you could find multiple domains for well less than $10 per year. 
 
-While signed into your Cloudflare account, and with your email verified, you can look to the left tool bar for `Domains Registration`. Expand this accordian to reveal the various options, and select `Register Domains`. From this page in the box under `Enter a domain name` type a domain name that you are interested in purchasing, then click `Search`. Now a table with your options should appear. Choose the best domain for you and click `Purchase`, then follow through with your transaction. 
+While signed into your Cloudflare account, and with your email verified, you can look to the left tool bar for `Domains Registration`. Expand this accordion to reveal the various options and select `Register Domains`. From this page in the box under `Enter a domain name` type a domain name that you are interested in purchasing, then click `Search`. Now a table with your options should appear. Choose the best domain for you and click `Purchase`, then follow through with your transaction. 
 
 ![Screen Shot 2023-03-07 at 11 14 51 AM Medium](https://user-images.githubusercontent.com/126691160/223486823-bd0099e4-dbd5-42ab-90cb-46ba512aa59a.jpeg)
 
 ### Assigning a Domain as a Website
 
-If you did not purchase your domain through Cloudflare, you must add it in as a website. Do this by navigating to the `Webistes` page on left tool bar.
+If you did not purchase your domain through Cloudflare you must add it in as a website. Do this by navigating to the `Webistes` page on left tool bar.
 
 ![Screen Shot 2023-03-07 at 2 20 23 PM](https://user-images.githubusercontent.com/126691160/223529866-b6b9b573-73e6-4ffb-99bd-cc72a21f0293.png)
 
@@ -70,7 +70,7 @@ On this page click `+Add a Site`
 
 ![Screen Shot 2023-03-07 at 2 20 49 PM](https://user-images.githubusercontent.com/126691160/223531603-fb60db0e-b167-40ae-9684-aa772030d0c8.png)
 
-In the box under `Enter your site (example.com)` type in your registered domain, then click `Add Site` button to add it as one of your websites. Now when clicking the `Webistes` page on left tool bar, when the `Home` page is prompted it should display a box with your domain. By clicking that box you can look at settings, data, management tools that are pertinent to your website.
+In the box under `Enter your site (example.com)` type in your registered domain, then click `Add Site` button to add it as one of your websites. Now when clicking the `Websites` page on left tool bar, when the `Home` page is prompted it should display a box with your domain. By clicking that box you can look at settings, data, management tools that are pertinent to your website.
 
 ![Screen Shot 2023-03-07 at 2 33 22 PM](https://user-images.githubusercontent.com/126691160/223533060-3562f604-1577-4329-8172-754adc89e7fe.png)
 
@@ -186,7 +186,7 @@ Keep these terms in mind:
 [UUID] – You will need to specify the UUID that you got back in step 5 of this section.
 [HOSTNAME] – Swap this value out with the domain name you are planning to utilize. For example, “test.pimylifeup.com“.
 [PORT] – Finally, replace “PORT” with the port you want accessible through the tunnel.
-[PROTOCOL] – This is the protocol you want tobe utilized for your service. In the case of a web server, you will want to use “http” or “https“.
+[PROTOCOL] – This is the protocol you want to be utilized for your service. In the case of a web server, you will want to use “http” or “https“.
 
 Your file should appear as this:
 
@@ -240,9 +240,9 @@ To look at and manage your tunnel from the Cloudflare website click the `Zero Tr
 
 ![Screen Shot 2023-03-07 at 2 35 35 PM](https://user-images.githubusercontent.com/126691160/223533507-d179c2d3-a5ae-44f7-af06-d37193c3c6d4.png)
 
-This will prompt an entirely new tab. From the left tool bar in the new `Cloudflare Zero Trust` tab find the `Access` section, expand its accordian, and select `Tunnels`.
+This will prompt an entirely new tab. From the left tool bar in the new `Cloudflare Zero Trust` tab find the `Access` section, expand its accordion, and select `Tunnels`.
 
-From here you should see the tunnel that you created on your Pi, and navigating to this page can tell you key information like the status of your tunnel. Changes, such as changing your routes, made to your tunnel here ***should** translate down to the config file on your Pi. THIS IS NOT ALWAYS THE CASE. It is suggested that you only make modifications from the actual config file. 
+From here you should see the tunnel that you created on your Pi, and navigating to this page can tell you key information like the status of your tunnel. Changes, such as changing your routes, made to your tunnel here ***should*** translate down to the config file on your Pi. THIS IS NOT ALWAYS THE CASE. It is suggested that you only make modifications from the actual config file. 
 
 
 

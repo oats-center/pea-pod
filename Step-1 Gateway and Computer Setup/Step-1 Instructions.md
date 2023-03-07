@@ -9,7 +9,7 @@ ENSURE THAT YOU HAVE COMPLETED THESE STEPS BEFORE POWERING ON THE GATEWAY OR ELS
 
 ### Survey Package Contents
 
-1. Check to make sure you have obtained all of the following. Some components can be swapped out ***before beginning*** for various purposes. A micro SD card with a higher GB capacity can be used for increased storage. Higher power antennas can be connected to increase the range that the gateway can be from a sensor. Antennas or power supplies could also appear different if you are using a weatherproof case.
+1. Check to make sure you have obtained all of the following. Some components can be swapped out ***before beginning*** for various purposes. A micro-SD card with a higher GB capacity can be used for increased storage. Higher power antennas can be connected to increase the range that the gateway can be from a sensor. Antennas or power supplies could also appear different if you are using a weatherproof case.
 
 ![rak package contents](https://user-images.githubusercontent.com/126691160/222323617-5eeedf1d-1d76-4ca4-8dfe-a4e911899a76.jpeg)
 
@@ -21,11 +21,11 @@ ENSURE THAT YOU HAVE COMPLETED THESE STEPS BEFORE POWERING ON THE GATEWAY OR ELS
 
 ### Format SD Card
 
-3. Format, or burn, the most up-to-date firmware onto the micro SD card. To access the most up-to-date firmware and learn how to burn the firmware image onto the SD card follow [this link](https://docs.rakwireless.com/Knowledge-Hub/Learn/WisGate-Developer-Gateway-Firmware-Burning/). The function of the firmware is to structure the computer and provide it basic instructions about how to operate and communicate with other softwares.
+3. Format, or burn, the most up-to-date firmware onto the micro-SD card. To access the most up-to-date firmware and learn how to burn the firmware image onto the SD card follow [this link](https://docs.rakwireless.com/Knowledge-Hub/Learn/WisGate-Developer-Gateway-Firmware-Burning/). The function of the firmware is to structure the computer and provide it basic instructions about how to operate and communicate with other software.
 
 ### Insert SD Card
 
-4. With step 3 completed the SD card can now be inserted into the SD card slot of the computer. This slot is labeled in the same diagram as the antenna terminals. To insert the SD card a pair of tweezers or other fine tool may be required to delicately place it without damaging the computer. 
+4. With step 3 completed the SD card can now be inserted into the SD card slot of the computer. This slot is labeled in the same diagram as the antenna terminals. To insert the SD card a pair of tweezers or another fine tool may be required to delicately place it without damaging the computer. 
 
 ### Power On
 
@@ -33,15 +33,15 @@ ENSURE THAT YOU HAVE COMPLETED THESE STEPS BEFORE POWERING ON THE GATEWAY OR ELS
 
 ## Connecting to the Pi
 
-Before you can begin setting up your Pi and gateway you must establish a connection between your computer and the Pi. There are two options that you have to perform this, you can connect wirelessly via the default local network of the Pi (also called Wi-Fi AP Mode) or through a wired ethernet connectiion between your computer and the Pi. Both options have positives and negatives.
+Before you can begin setting up your Pi and gateway you must establish a connection between your computer and the Pi. There are two options that you have to perform this, you can connect wirelessly via the default local network of the Pi (also called Wi-Fi AP Mode) or through a wired ethernet connection between your computer and the Pi. Both options have positives and negatives.
 
-In the next section, after Connecting to the Pi, the use of terminal and ssh (Secure Shell) will be discussed for you to essentially log into your Pi. In the following sets of instructions for Chirpstack, Grafana, and others your Pi will require a conncetion to the internet to be able to download the necessary software. Facilitating this internet connection begins here in this step with how you connect to the Pi, and it is important to understand the tradeoffs and make a decision on how you will establish your connection. 
+In the next section, after Connecting to the Pi, the use of Terminal and SSH (Secure Shell) will be discussed for you to essentially log into your Pi. In the following sets of instructions for Chirpstack, Grafana, and others your Pi will require a connection to the internet to be able to download the necessary software. Facilitating this internet connection begins here in this step with how you connect to the Pi, and it is important to understand the tradeoffs and make a decision on how you will establish your connection. 
 
-For the wireless or Wi-Fi AP mode, you will be connecting to the local network of Pi, but this means that your personal computer will no longer be connected to your home internet. In later steps you will have to connect the Pi to your home internet, which will disable the the Pi's ability to broadcast its  own local network. This will also change the Pi's IP address that you will need to ssh to or log in with. With access to your home internet's router you can overcome this issue. If you intend on using your gateway and Pi without internet long term, then it may be best to use the ethernet connection as it will not disable the local network mode. All of this can also be reversed if you decide to chnage plans, and how to do that will be shown below. 
+For the wireless or Wi-Fi AP mode, you will be connecting to the local network of Pi, but this means that your personal computer will no longer be connected to your home internet. In later steps you will have to connect the Pi to your home internet, which will disable the Pi's ability to broadcast its own local network. This will also change the Pi's IP address that you will need to SSH to or log in with. With access to your home internet's router, you can overcome this issue. If you intend on using your gateway and Pi without internet long term, then it may be best to use the ethernet connection as it will not disable the local network mode. All of this can also be reversed if you decide to change plans, and how to do that will be shown below. 
 
 Today not all laptops have ethernet ports, and thus not every user will have the ability to connect in this way. But if you do, then your laptop can remain connected to your home internet and still be connected via wire to the Pi.
 
-The steps below will show the Wi-Fi AP mode, but in depth details of connecting over ethernet are available [here](https://github.com/adamschreck/pea-pod/files/10867195/RAK.Quickstart.Guide.pdf)
+The steps below will show the Wi-Fi AP mode, but in-depth details of connecting over ethernet are available [here](https://github.com/adamschreck/pea-pod/files/10867195/RAK.Quickstart.Guide.pdf)
 
 ### Locate and connect to network
 
@@ -59,7 +59,7 @@ The steps below will show the Wi-Fi AP mode, but in depth details of connecting 
 
 ![9 Medium](https://user-images.githubusercontent.com/126691160/222528230-f432d86c-2c19-485e-830a-ee336a40c086.jpeg)
 
-Once Terminal has lauched for Mac OS, enter root mode (allows you to take on the role of an administrator on your Mac) type `sudo -i` in the window then click `enter`
+Once Terminal has launched for Mac OS, enter root mode (allows you to take on the role of an administrator on your Mac) type `sudo -i` in the window then click `enter`
 
 This should prompt you to have to input your computer's password and click `enter`. Below is an image depicting how your terminal should appear.
 
@@ -75,7 +75,7 @@ This should prompt you to have to input your computer's password and click `ente
 
 ### Login to the Pi's User Interface
 
-1. In your Terminal window type `sudo gateway-config` then click `enter`. This will lauch the Pi's User Interface shown below. You can navigate through the different sections using your keyboard's arrow keys and by clicking `enter`. The image below will later be refered to as the ***main menu***.
+1. In your Terminal window type `sudo gateway-config` then click `enter`. This will launch the Pi's User Interface shown below. You can navigate through the different sections using your keyboard's arrow keys and by clicking `enter`. The image below will later be referred to as the ***main menu***.
 
 ![config-options](https://user-images.githubusercontent.com/126691160/222538235-df61a6e5-3b84-4563-8105-c09ecbecda86.png)
 
@@ -90,7 +90,7 @@ The sections coordinate to these actions:
 
 ### Set Pi Password
 
-2. Select and enter the `1 Set pi password` option. Follow the on screen prompt shown below to set a new password for logging onto your Pi. This will replace the default password ***raspberry***. BE SURE TO TAKE NOTE OF THE PASSWORD YOU CREATE, IT IS NECESSARY TO LOGIN TO YOUR Pi AND CANNOT BE RETRIEVED OR RESET LATER
+2. Select and enter the `1 Set pi password` option. Follow the on-screen prompt shown below to set a new password for logging onto your Pi. This will replace the default password ***raspberry***. BE SURE TO TAKE NOTE OF THE PASSWORD YOU CREATE; IT IS NECESSARY TO LOGIN TO YOUR Pi AND CANNOT BE RETRIEVED OR RESET LATER
 
 ![Screen Shot 2023-03-02 at 2 36 36 PM](https://user-images.githubusercontent.com/126691160/222538504-a0f50d5a-d1e4-4445-bdd9-e9901233e0c7.png)
 
@@ -104,7 +104,7 @@ You will then be prompted with two options `1 ChirpStack Channel-plan configurat
 
 ![chirpstack_channel](https://user-images.githubusercontent.com/126691160/222551572-20419394-0c6c-4678-a5f7-8485f80f87ae.png)
 
-For now select `1 ChirpStack Channel-plan configuration`. The screen below will be prompted.
+For now, select `1 ChirpStack Channel-plan configuration`. The screen below will be prompted.
 
 ![chirpstack-channel-plan](https://user-images.githubusercontent.com/126691160/222556831-9fdc9d86-8cd9-4ce5-98f0-e0416dd86e8e.png)
 
@@ -132,7 +132,7 @@ Within the ***Configure wifi*** menu the sections coordinate to these actions:
 - Add New SSID for Client - this is used if you want to connect to a new Wi-Fi Network. Only works in Wi-Fi Client mode.
 - Change Wi-Fi Country - this is used to modify the resident country to match Wi-Fi standards.
 
-2. To enable Wi-Fi Client Mode (your Pi being a client of your home internt's router), you have to disable AP mode first. Do this by choosing `2 Enable Client Mode/Disable AP ModeOnce Wi-Fi AP Mode`. Once this is disabled, you can now connect to your home internet's Wi-Fi Network by choosing `4 Add New SSID for Client.`
+2. To enable Wi-Fi Client Mode (your Pi being a client of your home internet's router), you have to disable AP mode first. Do this by choosing `2 Enable Client Mode/Disable AP Mode`. Once this is disabled, you can now connect to your home internet's Wi-Fi Network by choosing `4 Add New SSID for Client.`
 
 Begin by choosing your local region, for example `US - United States` then select `OK`
 
@@ -150,11 +150,11 @@ Now type your home internet's password. If there is none then leave this field e
 
 1. From the main menu select `Quit` to exit the Pi's user interface and return to the Terminal window. 
 
-2. Lastly, reboot the gateway by typing `sudo reboot` in the command line then `enter`. This is a necessary step in order to enact and save the changes that you have made. By rebooting you will also become logged out of your Pi, to restablish your connection you will need to follow the steps of the section below.
+2. Lastly, reboot the gateway by typing `sudo reboot` in the command line then `enter`. This is a necessary step in order to enact and save the changes that you have made. By rebooting you will also become logged out of your Pi, to reestablish your connection you will need to follow the steps of the section below.
 
 ## Logging Back into Gateway
 
-After completing all of the above steps your Pi will no longer broadcast its local network, orignially appearing as some variation of `Rakwireless_XXXX` in your network list, it will no longer be visable here. Instead, your Pi is now a client or resident living on your home internet's router. To be able to ssh or login to your Pi you will need to determine the address of where it is currently living, specifically what its new address is on your router. This address will change as you add and remove devices from your home internet, so you should re-visit these steps if in the future the IP address that you would login with no longer works. 
+After completing all of the above steps your Pi will no longer broadcast its local network, originally appearing as some variation of `Rakwireless_XXXX` in your network list, it will no longer be visible here. Instead, your Pi is now a client or resident living on your home internet's router. To be able to SSH or login to your Pi you will need to determine the address of where it is currently living, specifically what its new address is on your router. This address will change as you add and remove devices from your home internet, so you should re-visit these steps if in the future the IP address that you would login with no longer works. 
 
 1. Reconnect your personal computer to your home internet.
 
@@ -164,14 +164,14 @@ After completing all of the above steps your Pi will no longer broadcast its loc
 
 [Steps to find IP addresses on Iphone, Android, macOS, or Windows devices](https://help.joinposter.com/en/articles/5403165-how-to-check-ip-address-of-the-local-network-on-ios-android-and-windows-devices)
 
-3. While connnected to your home internet, you can launch your prefered browser and enter your home internet's IP address in the top bar and click `enter`. This should prompt a page similar to the one shown below. After navigating to this page, you can login to your router simply with your home internet's SSID as the username and your regular internet password.
+3. While connected to your home internet, you can launch your preferred browser and enter your home internet's IP address in the top bar and click `enter`. This should prompt a page similar to the one shown below. After navigating to this page, you can login to your router simply with your home internet's SSID as the username and your regular internet password.
 
 ![Screen Shot 2023-03-02 at 10 33 54 PM](https://user-images.githubusercontent.com/126691160/222747624-2dec4c9a-24a4-46c6-ba7e-b0460ff93cd9.png)
 
-4. From here you will need to locate what can be refered to as the DHCP Client Table. This table is list of all of the devices connected to your home internet and other important information. Each router is different, so take note of the brand of router that you have consider searching something similar to `How to find client table on linksys router` and look for articles similar to [this](https://www.linksys.com/gb/support-article/?articleNum=316202). You should be able to locate a table that appears like the one seen below. Here you can see the device `rak-gateway` and its IP address on your network, in this instance being `10.0.0.145`.
+4. From here you will need to locate what can be referred to as the DHCP Client Table. This table is list of all of the devices connected to your home internet and other important information. Each router is different, so take note of the brand of router that you have consider searching something similar to `How to find client table on linksys router` and look for articles similar to [this](https://www.linksys.com/gb/support-article/?articleNum=316202). You should be able to locate a table that appears like the one seen below. Here you can see the device `rak-gateway` and its IP address on your network, in this instance being `10.0.0.145`.
 
 ![Screen Shot 2023-03-02 at 10 39 36 PM](https://user-images.githubusercontent.com/126691160/222747746-953eb865-59ea-4b68-b61d-f293e17a98ef.png)
 
-5. Now return to your Terminal window and follow the same procedure as mentioned in the [orginal section](https://github.com/adamschreck/pea-pod/blob/main/Step-1%20Gateway%20and%20Computer%20Setup/Step-1%20Instructions.md#ssh-into-pi) of logging into your Pi. Specifically typing ssh pi@ then your Pi's IP address. In this case the command would be `ssh pi@10.0.0.145` and enter the password that you set up for your Pi. Once you have reached the screen shown below you have logged back in, and offically completed the `Step-1 Gateway and Computer Setup`!
+5. Now return to your Terminal window and follow the same procedure as mentioned in the [original section](https://github.com/adamschreck/pea-pod/blob/main/Step-1%20Gateway%20and%20Computer%20Setup/Step-1%20Instructions.md#ssh-into-pi) of logging into your Pi. Specifically typing ssh pi@ then your Pi's IP address. In this case the command would be `ssh pi@10.0.0.145` and enter the password that you set up for your Pi. Once you have reached the screen shown below you have logged back in, and officially completed the `Step-1 Gateway and Computer Setup`!
 
 ![Screen Shot 2023-03-03 at 11 48 26 AM](https://user-images.githubusercontent.com/126691160/222778897-bf607d00-a510-4f31-9698-addf72bef2ef.png)

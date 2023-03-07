@@ -125,7 +125,7 @@ This directory is where we will keep the node exporter as the location is intend
 
     sudo mkdir /opt/node-exporter
 
-2. Next, change into our newly-created directory.
+2. Next, change into our newly created directory.
 
 Changing to the directory will ensure that the archives we are about to download will be in the correct place.
 
@@ -213,7 +213,7 @@ You can begin editing this file by using the command below on your Raspberry Pi.
 
 The bit that we are interested in is the “scrape_configs” section. This section is what will allow us to add additional jobs to scrape from.
 
-For example you can add this:
+For example, you can add this:
 
     static_configs:
         - targets: ['localhost:9090']
@@ -242,11 +242,11 @@ As we have already created a service for it on our Raspberry Pi, restarting is a
 
 ![Screen Shot 2023-03-06 at 10 55 14 PM](https://user-images.githubusercontent.com/126691160/223317247-089f3a9c-78d8-47b5-b52a-786dd73b8994.png)
 
-2. Once `+immport` is selcted it will lead to the page shown below. From here we can import a pre-made dashboard designed for Prometheus and Node Exporter metrics from the Grafana dashboards community. More information about the specific dashboard that we will use can be found [here](https://grafana.com/grafana/dashboards/1860-node-exporter-full/). To import, within the box below `Import via grafana.com` enter the ID `1860` and click `Load`.
+2. Once `+import` is selected it will lead to the page shown below. From here we can import a pre-made dashboard designed for Prometheus and Node Exporter metrics from the Grafana dashboards community. More information about the specific dashboard that we will use can be found [here](https://grafana.com/grafana/dashboards/1860-node-exporter-full/). To import, within the box below `Import via grafana.com` enter the ID `1860` and click `Load`.
 
 ![Screen Shot 2023-03-06 at 10 56 40 PM](https://user-images.githubusercontent.com/126691160/223317182-3f9dfdcf-e8ea-4862-9430-a105e97c9feb.png)
 
-The final product should appear as shown in the image below. A number of metrics are shown and not all hold the same value for the pea-POD applicaiton, but expand the `Basic CPU / Mem / Net / Disk` accordian to view memory specific data.
+The final product should appear as shown in the image below. A number of metrics are shown and not all hold the same value for the pea-POD application, but expand the `Basic CPU / Mem / Net / Disk` accordion to view memory specific data.
 
 ![Screen Shot 2023-03-06 at 11 02 40 PM](https://user-images.githubusercontent.com/126691160/223317751-4f3213ec-9d68-4666-b681-a4fb1c5d5c87.png)
 

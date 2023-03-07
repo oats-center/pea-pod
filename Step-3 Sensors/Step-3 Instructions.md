@@ -1,12 +1,12 @@
 # **Overview**
 
-Possible sensors to be used with any LoRaWAN network include a variety of options in both type of measurement and brand. While not specifically identified as LoRaWAN sensors, if properly wired and configured with a LoRaWAN specific sensor node, many options become available. This makes this set of instructions very situation and use case dependent, and thus may not offer the same sort of assitance as other sections. 
+Possible sensors to be used with any LoRaWAN network include a variety of options in both type of measurement and brand. While not specifically identified as LoRaWAN sensors, if properly wired and configured with a LoRaWAN specific sensor node, many options become available. This makes this set of instructions very situation and use case dependent, and thus may not offer the same sort of assistance as other sections. 
 
-When planning the sensors that you will use in your data pipeline consider what information is important to your use case. If you are wanting to collect weather information then the sensors below may be appropriate. If not, or if there are additional data points that you want to collect, then with some searching you can likely find the right sensors for you. One place to start would be to purchase the [Dragino LSN50-V2 Sensor Node](https://www.digikey.com/en/products/detail/seeed-technology-co.,-ltd/113990820/16652879?utm_adgroup=RF%20Receiver%2C%20Transmitter%2C%20and%20Transceiver%20Finished%20Units&utm_source=google&utm_medium=cpc&utm_campaign=Shopping_Product_RF%2FIF%20and%20RFID_NEW&utm_term=&utm_content=RF%20Receiver%2C%20Transmitter%2C%20and%20Transceiver%20Finished%20Units&gclid=CjwKCAiAu5agBhBzEiwAdiR5tJAdWvo_F1_0obLfVvfQeP2EDNY0Y6JR-78-ETDYIk84oDZ6JDbiYRoCjG0QAvD_BwE) as it is one of the most widely available and widely documented LoRaWAN sensor nodes on the market. This build guide will not detail any projects with this specific sensor node. However, with this and other sensors and nodes that you source you can research and find CODEC's on various community forums such as the [Chirpstack Community for Devices](https://forum.chirpstack.io/c/devices/8) and [The Things Network Community for Devices](https://www.thethingsnetwork.org/forum/c/nodes/7). Keep in mind that sensors purchased must be LoRaWAN, not merely LoRa, specific sensors and intended for the US market operating on the frequency 915 MHz.
+When planning the sensors that you will use in your data pipeline consider what information is important to your use case. If you are wanting to collect weather information, then the sensors below may be appropriate. If not, or if there are additional data points that you want to collect, then with some searching you can likely find the right sensors for you. One place to start would be to purchase the [Dragino LSN50-V2 Sensor Node](https://www.digikey.com/en/products/detail/seeed-technology-co.,-ltd/113990820/16652879?utm_adgroup=RF%20Receiver%2C%20Transmitter%2C%20and%20Transceiver%20Finished%20Units&utm_source=google&utm_medium=cpc&utm_campaign=Shopping_Product_RF%2FIF%20and%20RFID_NEW&utm_term=&utm_content=RF%20Receiver%2C%20Transmitter%2C%20and%20Transceiver%20Finished%20Units&gclid=CjwKCAiAu5agBhBzEiwAdiR5tJAdWvo_F1_0obLfVvfQeP2EDNY0Y6JR-78-ETDYIk84oDZ6JDbiYRoCjG0QAvD_BwE) as it is one of the most widely available and widely documented LoRaWAN sensor nodes on the market. This build guide will not detail any projects with this specific sensor node. However, with this and other sensors and nodes that you source you can research and find CODEC's on various community forums such as the [Chirpstack Community for Devices](https://forum.chirpstack.io/c/devices/8) and [The Things Network Community for Devices](https://www.thethingsnetwork.org/forum/c/nodes/7). Keep in mind that sensors purchased must be LoRaWAN, not merely LoRa, specific sensors and intended for the US market operating on the frequency 915 MHz.
 
 This set of instructions, like most of this entire build guide, is focused on creating the LoRaWAN network not specific devices or use cases. Thus, this is primarily intended to explain the steps necessary to set up the PODs kit devices on Chirpstack. The same steps are generally applicable to other sensors and nodes. These steps are not intended to explain the wiring of sensors and sensor nodes or other intricacies. The instructions below will pull information directly from the [original POD build guide](https://github.com/oats-center/pod/blob/main/build-guide.md).
 
-For demonstration purposes a selection of five sensors was made to accompany the original PODs kit when deployed. These sensors were selected to be able to measure metrics felt to be valuable for most operational decisions; including rainfall, temperature, soil moisture, relative humidity, sunlight, and location. In the majority of installations three sensors, the Davis rain gauge tipping bucket, Vegetronix soil moisture sensor, and TEWA thermistor, were wired to a singular Digital Matter SensorNode. One Tektelic Agricultural Surface Sensor was provided with the ability to sense soil moisture and temperature, ambient humidity and environmental temperature, and light detection and measurement. Two Digital Matter Oyster GPS trackers were included with the intent to track assets or machine activity through a field. The entire sensor suite is shown below in the figure and described in greater detail in the table below.
+For demonstration purposes a selection of five sensors was made to accompany the original PODs kit when deployed. These sensors were selected to be able to measure metrics felt to be valuable for most operational decisions, including rainfall, temperature, soil moisture, relative humidity, sunlight, and location. In the majority of installations three sensors, the Davis rain gauge tipping bucket, Vegetronix soil moisture sensor, and TEWA thermistor, were wired to a singular Digital Matter SensorNode. One Tektelic Agricultural Surface Sensor was provided with the ability to sense soil moisture and temperature, ambient humidity and environmental temperature, and light detection and measurement. Two Digital Matter Oyster GPS trackers were included with the intent to track assets or machine activity through a field. The entire sensor suite is shown below in the figure and described in greater detail in the table below.
 
 # **Hardware**
 
@@ -19,7 +19,7 @@ For demonstration purposes a selection of five sensors was made to accompany the
 | 3 | Soil Moisture Sensor | Soil Moisture Sensor - 2 meter cable | Vegetronix | $48.95 | [link](https://www.vegetronix.com/Products/VH400/) |
 | 4 | Air Temperature Sensor | NTC Thermistor 10k Probe | TEWA Sensors LLC | $4.20 | [link](https://www.digikey.com/en/products/detail/tewa-sensors-llc/TT02-10KC3-T105-1500/8549162) |
 | 5 | Oyster (GPS) | Oyster LoRaWAN | Digital Matter | $121.50 | [link](https://www.restotracker.com/product/oyster-lorawan/) |
-| 6 | Tektelic Ag Sensor (VWC, light, air temp, humdity) | Agricultural Surface Sensor | TEKTELIC Communications Inc. | $136.05 | [link](https://www.digikey.com/en/products/detail/tektelic-communications-inc/T0005982/13168751) |
+| 6 | Tektelic Ag Sensor (VWC, light, air temp, humidity) | Agricultural Surface Sensor | TEKTELIC Communications Inc. | $136.05 | [link](https://www.digikey.com/en/products/detail/tektelic-communications-inc/T0005982/13168751) |
 
 # **Steps**
 
@@ -27,7 +27,7 @@ For demonstration purposes a selection of five sensors was made to accompany the
 
 ### Create device profile: Digital Matter Oyster
 
-Create a device profile by selecting "Device-profiles" from the left panel menu, and hitting `+ CREATE`.
+Create a device profile by selecting "Device-profiles" from the left panel menu and hitting `+ CREATE`.
 Please use these settings:
 
 GENERAL tab:
@@ -52,9 +52,9 @@ CODEC tab:
 
 Hit `CREATE DEVICE-PROFILE`
 
-### Create device profile: Rain Guage (DM SensorNode)
+### Create device profile: Rain Gauge (DM SensorNode)
 
-Create a device profile by selecting "Device-profiles" from the left panel menu, and hitting `+ CREATE`.
+Create a device profile by selecting "Device-profiles" from the left panel menu and hitting `+ CREATE`.
 Please use these settings:
 
 GENERAL tab:
@@ -74,14 +74,14 @@ JOIN (OTAA / ABP) tab:
 CODEC tab:
 
 - Payload codec: `Custom JavaScript codec functions`
-- Copy and past the code [from here](https://raw.githubusercontent.com/oats-center/pod/master/codecs/digital_matters_sensor_node_rain_soil_temp.js) input the "Decode" textbox.
+- Copy and paste the code [from here](https://raw.githubusercontent.com/oats-center/pod/master/codecs/digital_matters_sensor_node_rain_soil_temp.js) input the "Decode" textbox.
 - Leave the "Encode" textbox as the default.
 
 Hit `CREATE DEVICE-PROFILE`
 
 ### Create device profile: Tektelic Ag Sensor
 
-Create a device profile by selecting "Device-profiles" from the left panel menu, and hitting `+ CREATE`.
+Create a device profile by selecting "Device-profiles" from the left panel menu and hitting `+ CREATE`.
 Please use these settings:
 
 GENERAL tab:
@@ -109,7 +109,7 @@ Hit `CREATE DEVICE-PROFILE`
 ## Creating your POD application
 
 Applications in Chirpstack hold a set of devices to communicate with.
-They also control how the received device data is set to integrated systems, like Thingsboard.
+They also control how the received device data is set to integrated systems.
 
 To create an application, go to Applications from the left panel menu, and select `+ CREATE`.
 Please use these settings:
@@ -119,12 +119,6 @@ Please use these settings:
 - Service-profile: `POD Profile`
 
 Select `CREATE APPLCATION`
-
-Add Thingsboard integration
-- Go to the Integrations tab within `POD-Kit`
-- Under Thingsboard.io click `ADD`
-- For the thingsboard.io server use `http://thingsboard:9090`
-- Click `Update Integration` 
 
 ## Adding Devices
 
@@ -168,7 +162,7 @@ This can be found on a label in the Oyster box as well as easily copy and pasted
 
 1. Install the [Digital Matters configuration tool](https://support.digitalmatter.com/support/solutions/articles/16000069244-oyster-lorawan-config-app)
 2. Connect the Digital Matters debug cable to Oyster and to your computer.
-3. Start the configuration tool, and select the COM port associated with the debug cable.
+3. Start the configuration tool and select the COM port associated with the debug cable.
 4. Download the [Oyster configuration](https://raw.githubusercontent.com/oats-center/pod/main/digital-matter-parameters/oyster), load it into the configuration app, and adjust as needed.
 5. Check the `Program Parameters` checkbox.
 6. Plug the debug cable into the Oyster.
@@ -189,8 +183,6 @@ Client `Create`
 - Application key: From the manufactures label and/or configuration app.
 - Network key: From the manufactures label and/or configuration app.
 
-**Access token will be added in the Thingsboard section under "Add Devices"**
-
 With the device added into Chirpstack, power cycle the device by pulling the batteries, waiting 10 seconds, and then re-inserting.
 After a few moments, the "Last seen" column should show a time or `a few seconds ago` that indicates the devices connected.
 
@@ -203,7 +195,7 @@ This can be found on a label in the Oyster box as well as easily copy and pasted
 
 1. Install the [Digital Matters configuration tool](https://support.digitalmatter.com/support/solutions/articles/16000093348-sensornode-lorawan-configuration-and-usage-guide)
 2. Connect the Digital Matters debug cable to Sensor Node and to your computer.
-3. Start the configuration tool, and select the COM port associated with the debug cable.
+3. Start the configuration tool and select the COM port associated with the debug cable.
 4. Download the [Rain Gauge Sensor Node configuration](https://raw.githubusercontent.com/oats-center/pod/main/digital-matter-parameters/sensor-node), load it into the configuration app, and adjust as needed.
 5. Check the `Program Parameters` checkbox.
 6. Plug the debug cable into the Sensor Node.
