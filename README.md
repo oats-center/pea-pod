@@ -44,6 +44,9 @@ For those who have no coding or computer science background this project may see
 - [RAK Gateway Product Overiew, Quickstart Guide, and Data Sheet](https://docs.rakwireless.com/Product-Categories/WisGate/RAK7244/Overview/)
 
 ### Hardware
+
+![IMG_5291 3 Medium](https://user-images.githubusercontent.com/126691160/223441576-b4426a7d-feee-41ee-a0c6-508c86dee2d0.jpeg)
+
 *THESE LINKS WERE ACTIVE AND AVAILABLE AT THE TIME OF PUBLISHING BUT MAY BE OUT OF STOCK AT THE TIME OF YOUR ACCESS.*
 
 *PLEASE ENSURE THAT ANY PURCHASED HARDWARE IS INTENDED FOR YOUR REGION. LOCALLY THIS MEANS THE UNITED STATES MARKET, POWER SUPPLIES MEANT FOR US OUTLETS, AND THE US RADIO FREQUENCY EXPECTATION OF 915 MHz FOR LoRa TRANSMISSION.*

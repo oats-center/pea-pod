@@ -15,7 +15,7 @@ For demonstration purposes a selection of five sensors was made to accompany the
 | ID     | Description | Component Name | Manufacturer | Approximate Per Unit Cost | URL |
 | -------| ----------- | -------------- | ------------ | ------------------------- | ----------- |
 | 1 | Sensor Node | SensorNode LoRaWAN | Digital Matter | $133.48 | [link](https://www.restotracker.com/product/sensornode-lorawan/) |
-| 2 | Rain gauge | Davis AeroCone Rain Gauge with Mountable Base | Davis Instruments | $97.5 | [link](https://www.scientificsales.com/6466-Davis-AeroCone-Rain-Gauge-with-Mountable-Base-p/6466.htm) |
+| 2 | Rain gauge | Davis AeroCone Rain Gauge with Mountable Base | Davis Instruments | $97.50 | [link](https://www.scientificsales.com/6466-Davis-AeroCone-Rain-Gauge-with-Mountable-Base-p/6466.htm) |
 | 3 | Soil Moisture Sensor | Soil Moisture Sensor - 2 meter cable | Vegetronix | $48.95 | [link](https://www.vegetronix.com/Products/VH400/) |
 | 4 | Air Temperature Sensor | NTC Thermistor 10k Probe | TEWA Sensors LLC | $4.20 | [link](https://www.digikey.com/en/products/detail/tewa-sensors-llc/TT02-10KC3-T105-1500/8549162) |
 | 5 | Oyster (GPS) | Oyster LoRaWAN | Digital Matter | $121.50 | [link](https://www.restotracker.com/product/oyster-lorawan/) |
