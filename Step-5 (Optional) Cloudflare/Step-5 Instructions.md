@@ -24,7 +24,7 @@ Freenom is a site that allows for the registrarion of domains using the few exte
 
 ![Screen Shot 2023-03-07 at 9 27 22 AM Medium](https://user-images.githubusercontent.com/126691160/223451528-0fe5a5ba-7db7-4e22-963e-248c3a57ac40.jpeg)
 
-3. From the `Find your new Domain` box search your desired domain with the extsion .tk added to the end. See the image below as an example. Your desired domain may or may not be available for registration. If you do not search with the extension `.tk` at the end Freenom will always say that that name is taken, even if the domain is truly available.
+3. From the `Find your new Domain` box search your desired domain with the extsion .tk added to the end and click `Check Availability`. See the image below as an example. Your desired domain may or may not be available for registration. If you do not search with the extension `.tk` at the end Freenom will always say that that name is taken, even if the domain is truly available.
 
 ![Screen Shot 2023-03-07 at 9 32 46 AM](https://user-images.githubusercontent.com/126691160/223465748-c07c7a31-b225-4951-b1c0-7574258bac55.png)
 
@@ -37,5 +37,12 @@ Freenom is a site that allows for the registrarion of domains using the few exte
 
 ### Option 2: Paid Domains
 
+In truth there are not many free ways to register a domain name today. If Freenom and extensions such as .tk are not available, then there are essentially no truly free domain options. As an alternative, you can use any number of domain registration sites such as Google Domains. By paying you will have more choice on the name and can hold the registration for longer than the terms of Freenom. Prefered sites for paid domain registration can be found below. 
+
 #### gen.xyz and the extension .xyz
 
+The benefit of gen.xyz is that they offer what are called 1.111B Class domains, which are numerical domain names that cost just $0.99 per year. Despite appearing somewhat random or not as simple as non-numerical names, the Cloudflare will operate the same no matter the domain name. This is the lowest cost option if free sources are not available. [At this link](https://gen.xyz/1111b) you can search for names and follow the steps to secure your domain. In the image below you can see more pricing information. 
+
+![Screen Shot 2023-03-07 at 10 48 55 AM Medium](https://user-images.githubusercontent.com/126691160/223476576-9e793a3e-7107-409b-88be-eee8c380c1ed.jpeg)
+
+#### Cloudflare Domains
