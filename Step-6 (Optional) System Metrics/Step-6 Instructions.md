@@ -1,6 +1,6 @@
 # **Overview**
 
-After you have completed the setup of your Pi and subsequent LoRaWAN network, it be me important to look at how your Pi is performing. Specifically, because all of your data will live locally on the Pi it is advisable that you monitor the storage and available space left for data storage. To do this two tools called Prometheus and Node Exporter can run constantly on the Pi to collect system metrics, then a new Grafana dashboard can visualize these measurements.
+After you have completed the setup of your Pi and subsequent LoRaWAN network, it may be important to look at how your Pi is performing. Specifically, because all of your data will live locally on the Pi it is advisable that you monitor the available space left for data storage. To do this two tools called Prometheus and Node Exporter can run constantly on the Pi to collect system metrics, then a new Grafana dashboard can visualize these measurements. The steps below will detail the process to establish this system.
 
 # **Steps**
 
@@ -153,7 +153,9 @@ Run the following command to delete the archive.
 
 Deleting the archive isn’t necessarily needed, but it helps keep your system clean of unneeded files.
 
-6. Finally, we can bring the node exporter online by using the command below.
+6. Finally, we can bring the node exporter online.
+
+To do this use the command below.
 
     ./node_exporter
 
@@ -166,6 +168,8 @@ Run the following command to begin writing to a new file.
     sudo nano /etc/systemd/system/nodeexporter.service
 
 2. Within this file, type in the following lines of code.
+
+To copy, paste, or perform other actions follow the prompts at the bottom of the nano window.
 
     [Unit]
     Description=Prometheus Node Exporter
@@ -192,6 +196,8 @@ Running the following command will let our node exporter startup when the device
     sudo systemctl enable nodeexporter
 
 5. Next, let’s start the Prometheus node exporter now, so we don’t have to wait until we restart.
+
+To do this use the command below.
 
     sudo systemctl start nodeexporter
 
